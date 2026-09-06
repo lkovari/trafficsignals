@@ -26,14 +26,14 @@ class SignCatalogTest {
         assertEquals(10, SignCatalog.signsIn(SignCategory.Police).size)
         assertEquals(8, SignCatalog.signsIn(SignCategory.RouteType).size)
         assertEquals(9, SignCatalog.signsIn(SignCategory.Priority).size)
-        assertEquals(43, SignCatalog.signsIn(SignCategory.Mandatory).size)
-        assertEquals(46, SignCatalog.signsIn(SignCategory.Prohibitory).size)
-        assertEquals(65, SignCatalog.signsIn(SignCategory.Warning).size)
-        assertEquals(108, SignCatalog.signsIn(SignCategory.Information).size)
-        assertEquals(46, SignCatalog.signsIn(SignCategory.Additional).size)
-        assertEquals(26, SignCatalog.signsIn(SignCategory.RoadMarking).size)
-        assertEquals(16, SignCatalog.signsIn(SignCategory.TrafficLight).size)
-        assertEquals(377, SignCatalog.signs.size)
+        assertEquals(45, SignCatalog.signsIn(SignCategory.Mandatory).size)
+        assertEquals(49, SignCatalog.signsIn(SignCategory.Prohibitory).size)
+        assertEquals(70, SignCatalog.signsIn(SignCategory.Warning).size)
+        assertEquals(123, SignCatalog.signsIn(SignCategory.Information).size)
+        assertEquals(63, SignCatalog.signsIn(SignCategory.Additional).size)
+        assertEquals(29, SignCatalog.signsIn(SignCategory.RoadMarking).size)
+        assertEquals(20, SignCatalog.signsIn(SignCategory.TrafficLight).size)
+        assertEquals(426, SignCatalog.signs.size)
     }
 
     @Test

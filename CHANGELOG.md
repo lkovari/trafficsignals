@@ -10,11 +10,15 @@ Versioning matches `versionName` **2.0.0** / `versionCode` **2** (minSdk 24, tar
 ### Fixed
 
 - Home category grid stays inside the system safe area on all phones (status bar, gesture/nav bar); tiles shrink to fit four rows instead of clipping.
+- Lane-layout information signs (E-003, E-014, E-007) use the same SignBlue as the rest of the catalog.
 
 ### Added
 
 - Police signals category (KRESZ 6–7. §): arm signals, stop disc, stop from a moving police vehicle, and flagman.
 - Everyday/exam signs A-026, C-006, C-024, C-041, D-005, D-006, D-007, D-011, D-012, E-028, E-029, G-401.
+- Remaining unique KRESZ meanings: E-030/E-031, C-011, C-040, C-049, D-031/D-032, H-002–H-010, H-115, lane-use lights, cycle signal, yellow edge lines, BUS wordmark; E-007/H-104/E-003/E-014 bound to existing entries.
+- Right-side railway mirrors A-043/A-044/A-046/A-048/A-050; representative additional plates H-063, H-065, H-083, H-084, H-099; tourist I-001, I-004, I-025, I-031, I-032, I-034, I-037, I-040, I-044.
+- Distinct facility and pairing signs F-030, F-031, G-004, G-312, G-313, H-025.
 
 ## [2.0.0] — 2026-09-06
 

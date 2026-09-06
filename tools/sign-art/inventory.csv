@@ -44,7 +44,7 @@ utasitastado_gyalogutvege,Mandatory,utasitastado_gyalogutvege.jpg,Gyalogút vég
 utasitastado_gyalogkerekparut919,Mandatory,utasitastado_gyalogkerekparut919.png,Gyalog és kerépkárút a kiegészítő táblán jelzett időtartományban,Shared route for pedal cycles and pedestrians in time range of additional board only,,,original
 utasitastado_gyalogut69,Mandatory,utasitastado_gyalogut69.png,Gyalogút a kiegészítő táblán jelzett időtartományban,Footpath in time range of additional board only,,,original
 utasitastado_autobuszsav,Mandatory,utasitastado_autobuszsav.jpg,Autóbuszsáv,Bus lane,,,original
-utasitastado_autobuszsavvege,Mandatory,utasitastado_autobuszsavvege.jpg,Autóbuszsáv vége,End of Bus lane,,,original
+utasitastado_autobuszsavvege,Mandatory,utasitastado_autobuszsavvege.jpg,Autóbuszsáv vége,End of Bus lane,E-007,Hungary road sign E-007.svg,wikimedia
 utasitastado_holanchasznalatakotelezo,Mandatory,utasitastado_holanchasznalatakotelezo.jpg,Hólánc használata kötelező,Usage of snow chain required,D-033,Hungary road sign D-033.svg,wikimedia
 utasitastado_holanchasznalatakotelezovege,Mandatory,utasitastado_holanchasznalatakotelezovege.jpg,Hólánc használata kötelező vége,End of usage of snow chain required,D-034,Hungary road sign D-034.svg,wikimedia
 utasitastado_gyalogosovezet,Mandatory,utasitastado_gyalogosovezet.jpg,"Gyalogos övezet. Ha időszakot megjelölő kiegészítő tábla van, az ott lakók járművei és a kerékpárosok az időszakon kívül közlekedhetnek max 10km6h-s sebességgel.",Pedestrian zone.,E-032,Hungary road sign E-032.svg,wikimedia
@@ -239,8 +239,8 @@ tajekoztato_muemlek,Information,tajekoztato_muemlek.png,Műemlék,Monument,,,ori
 tajekoztato_utvonalmegerositotabla,Information,tajekoztato_utvonalmegerositotabla.jpg,Útvonalmegerősítő tábla,Route Confirmation panel,,,original
 tajekoztato_utvonalmegerositotablahn,Information,tajekoztato_utvonalmegerositotablahn.png,Útvonalmegerősítő tábla,Route Confirmation panel,,,original
 tajekoztato_sielesrealkalmashely,Information,tajekoztato_sielesrealkalmashely.jpg,Sielésre kijelölt hely,Selected place for skiing,,,original
-kulonleges_besorolasirend3,Information,kulonleges_besorolasirend3.jpg,Besorolási rend,Showing Arrangement of traffic lanes appropriate lanes for turning movements at junction ahead,,,original
-kulonleges_forgalmisavoklegkisebbsebessege,Information,kulonleges_forgalmisavoklegkisebbsebessege.jpg,Forgalmi sávok legkisebb sebessége,Minimum speed of traffic lane,,,original
+kulonleges_besorolasirend3,Information,kulonleges_besorolasirend3.jpg,Besorolási rend,Showing Arrangement of traffic lanes appropriate lanes for turning movements at junction ahead,E-014,Hungary road sign E-014.svg,wikimedia
+kulonleges_forgalmisavoklegkisebbsebessege,Information,kulonleges_forgalmisavoklegkisebbsebessege.jpg,Forgalmi sávok legkisebb sebessége,Minimum speed of traffic lane,E-003,Hungary road sign E-003.svg,wikimedia
 kulonleges_gyalogosovezetvege,Information,kulonleges_gyalogosovezetvege.jpg,Gyalogosövezet vége,End of pedestrian zone,,,original
 kulonleges_kerekparoskozvetlenkapcsolat,Information,kulonleges_kerekparoskozvetlenkapcsolat.jpg,Kerékpárossal való közvetlen kapcsolat,A sign may be used to direct cyclists to a signal-controlled crossing,,,original
 kulonleges_kiegeszitosavkezdete50,Information,kulonleges_kiegeszitosavkezdete50.jpg,Kiegészítő sáv kezdete,"Traffic lane divide ahead, on right begin the additional traffic lane",,,original
@@ -271,7 +271,7 @@ kiegeszito_dijfizetes,Additional,kiegeszito_dijfizetes.jpg,Díjfizetés,Toll roa
 kiegeszito_dijfizetesikotelezettseg,Additional,kiegeszito_dijfizetesikotelezettseg.jpg,Díjfizetési kötelezettség,"Toll road, Matrica/Vignette, Video control",H-053,Hungary road sign H-053.svg,wikimedia
 kiegeszito_elszallitas,Additional,kiegeszito_elszallitas.jpg,Jármű elszállítása,Vehicle removal,H-048,Hungary road sign H-048.svg,wikimedia
 kiegeszito_esozes,Additional,kiegeszito_esozes.jpg,Esőzés! Fokozott veszélyre utal!,Rain! Indicate an increased risk of accident,H-027,Hungary road sign H-027.svg,wikimedia
-kiegeszito_fekvorendor,Additional,kiegeszito_fekvorendor.jpg,Fekvőrendőr,Speed bump,,,original
+kiegeszito_fekvorendor,Additional,kiegeszito_fekvorendor.jpg,Fekvőrendőr,Speed bump,H-104,Hungary road sign H-104.svg,wikimedia
 kiegeszito_fenysorompo,Additional,kiegeszito_fenysorompo.jpg,Fénysorompó,Level crossing light,H-022,Hungary road sign H-022.svg,wikimedia
 kiegeszito_forgalomcsillapirokozepsziget,Additional,kiegeszito_forgalomcsillapirokozepsziget.jpg,Forgalom csillapító középsziget,Speed limiter central iland,H-036,Hungary road sign H-036.svg,wikimedia
 kiegeszito_foutvonalvonalvezetese,Additional,kiegeszito_foutvonalvonalvezetese.jpg,Főútvonal vonalvezetése,Priority road turn left,H-001,Hungary road sign H-001.svg,wikimedia
@@ -376,3 +376,52 @@ utasitastado_kotelezomegfordulas,Mandatory,utasitastado_kotelezomegfordulas.png,
 kulonleges_korlatozottsebesseguovezet,Information,kulonleges_korlatozottsebesseguovezet.png,Korlátozott sebességű övezet,Maximum speed zone,E-028,Hungary road sign E-028.svg,wikimedia
 kulonleges_korlatozottsebesseguovezetvege,Information,kulonleges_korlatozottsebesseguovezetvege.png,Korlátozott sebességű övezet vége,End of maximum speed zone,E-029,Hungary road sign E-029.svg,wikimedia
 tajekoztato_altalanossebesseghatarok,Information,tajekoztato_altalanossebesseghatarok.png,Általános sebességhatárok,National default speed limits,G-401,Hungary road sign G-401.svg,wikimedia
+tilalmi_jelzettjarmuvekkelbehajtanitilos,Prohibitory,tilalmi_jelzettjarmuvekkelbehajtanitilos.png,A táblán jelzett járművekkel behajtani tilos,No entry for vehicles shown,C-011,Hungary road sign C-011.svg,wikimedia
+tilalmi_kotelezomegallaskomp,Prohibitory,tilalmi_kotelezomegallaskomp.png,Kötelező megállás KOMP,Mandatory stop — ferry,C-040,Hungary road sign C-040.svg,wikimedia
+tilalmi_dijfizeteselorejelzese,Prohibitory,tilalmi_dijfizeteselorejelzese.png,Díjfizetés előrejelzése,Toll payment ahead,C-049,Hungary road sign C-049.svg,wikimedia
+utasitastado_gyalogkerekparutosztottforditott,Mandatory,utasitastado_gyalogkerekparutosztottforditott.png,Osztott gyalog- és kerékpárút fordított kiosztás,Separated pedestrian and cycle path swapped sides,D-031,Hungary road sign D-031.svg,wikimedia
+utasitastado_gyalogkerekparutosztottforditottvege,Mandatory,utasitastado_gyalogkerekparutosztottforditottvege.png,Osztott gyalog- és kerékpárút fordított kiosztás vége,End of swapped separated path,D-032,Hungary road sign D-032.svg,wikimedia
+kulonleges_korlatozottforgalmuovezet,Information,kulonleges_korlatozottforgalmuovezet.png,Korlátozott forgalmú övezet,Limited traffic zone,E-030,Hungary road sign E-030.svg,wikimedia
+kulonleges_korlatozottforgalmuovezetvege,Information,kulonleges_korlatozottforgalmuovezetvege.png,Korlátozott forgalmú övezet vége,End of limited traffic zone,E-031,Hungary road sign E-031.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese2,Additional,kiegeszito_foutvonalvonalvezetese2.png,Főútvonal vonalvezetése,Priority-road layout,H-002,Hungary road sign H-002.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese3,Additional,kiegeszito_foutvonalvonalvezetese3.png,Főútvonal vonalvezetése,Priority-road layout,H-003,Hungary road sign H-003.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese4,Additional,kiegeszito_foutvonalvonalvezetese4.png,Főútvonal vonalvezetése,Priority-road layout,H-004,Hungary road sign H-004.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese5,Additional,kiegeszito_foutvonalvonalvezetese5.png,Főútvonal vonalvezetése,Priority-road layout,H-005,Hungary road sign H-005.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese6,Additional,kiegeszito_foutvonalvonalvezetese6.png,Főútvonal vonalvezetése,Priority-road layout,H-006,Hungary road sign H-006.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese7,Additional,kiegeszito_foutvonalvonalvezetese7.png,Főútvonal vonalvezetése,Priority-road layout,H-007,Hungary road sign H-007.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese8,Additional,kiegeszito_foutvonalvonalvezetese8.png,Főútvonal vonalvezetése,Priority-road layout,H-008,Hungary road sign H-008.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese9,Additional,kiegeszito_foutvonalvonalvezetese9.png,Főútvonal vonalvezetése,Priority-road layout,H-009,Hungary road sign H-009.svg,wikimedia
+kiegeszito_foutvonalvonalvezetese10,Additional,kiegeszito_foutvonalvonalvezetese10.png,Főútvonal vonalvezetése,Priority-road layout,H-010,Hungary road sign H-010.svg,wikimedia
+kiegeszito_ketiranyukerekparosforgalom,Additional,kiegeszito_ketiranyukerekparosforgalom.png,Kétirányú kerékpáros forgalom,Two-way cycle traffic,H-115,Hungary road sign H-115.svg,wikimedia
+fenyjelzo_savfoglaltsagpirosx,TrafficLight,fenyjelzo_savfoglaltsagpirosx.png,Sávfoglaltság piros X,Lane closed red X,,,
+fenyjelzo_savfoglaltsagzoldnyil,TrafficLight,fenyjelzo_savfoglaltsagzoldnyil.png,Sávfoglaltság zöld nyíl,Lane open green arrow,,,
+fenyjelzo_savfoglaltsagsarganyil,TrafficLight,fenyjelzo_savfoglaltsagsarganyil.png,Sávfoglaltság sárga nyíl,Leave lane amber arrow,,,
+fenyjelzo_kerekparos,TrafficLight,fenyjelzo_kerekparos.png,Kerékpáros jelzőlámpa,Cycle traffic signal,,,
+utburkolat_megallasitilalomsargavonal,RoadMarking,utburkolat_megallasitilalomsargavonal.png,Megállási tilalom sárga vonal,Yellow solid no-stopping line,,,
+utburkolat_varakozasitilalomsargavonal,RoadMarking,utburkolat_varakozasitilalomsargavonal.png,Várakozási tilalom sárga vonal,Yellow broken no-waiting line,,,
+utburkolat_buszfelirat,RoadMarking,utburkolat_buszfelirat.png,BUSZ felirat,BUS lane wordmark,,,
+veszely_vasutiatjarokezdete1j,Warning,veszely_vasutiatjarokezdete1j.png,Vasúti átjáró András-kereszt egy vágány jobb,Railroad crossbuck single track right,A-043,Hungary road sign A-043.svg,wikimedia
+veszely_vasutiatjarokezdete2j,Warning,veszely_vasutiatjarokezdete2j.png,Vasúti átjáró András-kereszt több vágány jobb,Railroad crossbuck multiple tracks right,A-044,Hungary road sign A-044.svg,wikimedia
+veszely_vasutiatjaroelojelzo1j,Warning,veszely_vasutiatjaroelojelzo1j.png,Vasúti átjáró előjelző jobb 150 m,Level-crossing countdown right 150 m,A-046,Hungary road sign A-046.svg,wikimedia
+veszely_vasutiatjaroelojelzo2j,Warning,veszely_vasutiatjaroelojelzo2j.png,Vasúti átjáró előjelző jobb 100 m,Level-crossing countdown right 100 m,A-048,Hungary road sign A-048.svg,wikimedia
+veszely_vasutiatjaroelojelzo3j,Warning,veszely_vasutiatjaroelojelzo3j.png,Vasúti átjáró előjelző jobb 50 m,Level-crossing countdown right 50 m,A-050,Hungary road sign A-050.svg,wikimedia
+kiegeszito_buszokreszere,Additional,kiegeszito_buszokreszere.png,Autóbuszok részére,Applies to buses,H-063,Hungary road sign H-063.svg,wikimedia
+kiegeszito_segedmotorosreszere,Additional,kiegeszito_segedmotorosreszere.png,Segédmotoros kerékpárok részére,Applies to mopeds,H-065,Hungary road sign H-065.svg,wikimedia
+kiegeszito_kiveveengedely,Additional,kiegeszito_kiveveengedely.png,Kivéve engedély,Except with permit,H-083,Hungary road sign H-083.svg,wikimedia
+kiegeszito_kiveveszemelygepkocsi,Additional,kiegeszito_kiveveszemelygepkocsi.png,Kivéve személygépkocsi,Except cars,H-084,Hungary road sign H-084.svg,wikimedia
+kiegeszito_kivevemozgaskorlatozott,Additional,kiegeszito_kivevemozgaskorlatozott.png,Kivéve mozgáskorlátozott,Except disabled badge,H-099,Hungary road sign H-099.svg,wikimedia
+tajekoztato_allatkert,Information,tajekoztato_allatkert.png,Állatkert,Zoo,I-001,Hungary road sign I-001.svg,wikimedia
+tajekoztato_kilato,Information,tajekoztato_kilato.png,Kilátó,Lookout,I-004,Hungary road sign I-004.svg,wikimedia
+tajekoztato_szinhaz,Information,tajekoztato_szinhaz.png,Színház,Theatre,I-025,Hungary road sign I-025.svg,wikimedia
+tajekoztato_temeto,Information,tajekoztato_temeto.png,Temető,Cemetery,I-031,Hungary road sign I-031.svg,wikimedia
+tajekoztato_templom,Information,tajekoztato_templom.png,Templom,Church,I-032,Hungary road sign I-032.svg,wikimedia
+tajekoztato_var,Information,tajekoztato_var.png,Vár,Castle,I-034,Hungary road sign I-034.svg,wikimedia
+tajekoztato_vizimalom,Information,tajekoztato_vizimalom.png,Vízimalom,Watermill,I-037,Hungary road sign I-037.svg,wikimedia
+tajekoztato_gyogyszertar,Information,tajekoztato_gyogyszertar.png,Gyógyszertár,Pharmacy,I-040,Hungary road sign I-040.svg,wikimedia
+tajekoztato_informacio,Information,tajekoztato_informacio.png,Információ,Information,I-044,Hungary road sign I-044.svg,wikimedia
+tajekoztato_rendorseg,Information,tajekoztato_rendorseg.png,Rendőrség,Police station,F-030,Hungary road sign F-030.svg,wikimedia
+tajekoztato_kozutiforgalomellenorzese,Information,tajekoztato_kozutiforgalomellenorzese.png,Közúti forgalom ellenőrzése,Traffic control,F-031,Hungary road sign F-031.svg,wikimedia
+tajekoztato_zsakutcaoldalsoutcabal,Information,tajekoztato_zsakutcaoldalsoutcabal.png,Zsákutca oldalsó utcában balra,Dead end on the side street to the left,G-313,Hungary road sign G-313.svg,wikimedia
+tajekoztato_zsakutcaoldalsoutcajobb,Information,tajekoztato_zsakutcaoldalsoutcajobb.png,Zsákutca oldalsó utcában jobbra,Dead end on the side street to the right,G-312,Hungary road sign G-312.svg,wikimedia
+kiegeszito_celszerusebessegvege,Additional,kiegeszito_celszerusebessegvege.png,Célszerű sebesség vége,End of recommended speed,G-004,Hungary road sign G-004.svg,wikimedia
+kiegeszito_bekak,Additional,kiegeszito_bekak.png,Békák,Frogs,H-025,Hungary road sign H-025.svg,wikimedia
