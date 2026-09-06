@@ -16,7 +16,7 @@ Kotlin + Jetpack Compose rewrite of the 2011 Eclipse app (`trafficsignals-e`). P
 - Material 3 catalog: license gate, nine categories, searchable sign grid, detail with previous/next, About.
 - English default strings; Hungarian in `values-hu` when the device locale is Hungarian.
 - Sign catalog generated from the Eclipse category lists (355 unique signs).
-- Wikimedia Commons Hungarian road-sign SVGs rasterized to 512px for 232 matched signs; unmatched signs keep the original rasters.
+- Wikimedia Commons Hungarian road-sign SVGs rasterized to 1024px and snapped to SignBlue `#0050A0` / SignRed `#C8102E` / SignYellow `#F5C400`; unmatched road-marking and traffic-light photos keep the original rasters.
 - DataStore preference for license acceptance (`trsipr` / `islicenseaccepted`).
 - Play listing assets: [docs/icon.png](docs/icon.png) (512×512), [docs/play-console/feature-graphic.png](docs/play-console/feature-graphic.png) (1024×500).
 - Bilingual privacy policy that follows the browser locale (Hungarian only when `hu`, otherwise English), with an EN/HU toggle.
@@ -25,8 +25,10 @@ Kotlin + Jetpack Compose rewrite of the 2011 Eclipse app (`trafficsignals-e`). P
 ### Changed
 
 - Replaced deprecated `Gallery` and per-category Activities with a single Compose navigation graph.
+- Home is a 3×3 category grid. Additional-signs uses a mandatory sign over a time plate; type-of-route uses the yellow main-road diamond with the motorway square.
 - Default language fallback is English (the Eclipse app fell back to Hungarian).
-- About credits Wikimedia diagrams and links the original Bitbucket source.
+- License (Acknowledge) and About fit one phone screen: compact spacing, auto-sized license text, Accept/Refuse always visible.
+- About source and privacy policy are tappable labels (full URLs are not shown).
 - Copyright line: 2016 – 2026 László Kővári.
 
 ### Fixed
@@ -35,3 +37,4 @@ Kotlin + Jetpack Compose rewrite of the 2011 Eclipse app (`trafficsignals-e`). P
 - Missing titles that used to show `-` now have EN/HU strings.
 - Wrong string bindings from the old `ImagesView` map (sign id now matches the string resource name).
 - Category key typo `kategoria_utvonatlipus` corrected to `kategoria_utvonaltipus`.
+- Removed `(c) LK` watermarks from catalog diagrams; low-resolution JPEGs replaced with PNG or redrawn KRESZ SVGs.

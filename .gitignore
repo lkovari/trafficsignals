@@ -50,4 +50,5 @@ render.experimental.xml
 
 tools/sign-art/cache/
 tools/sign-art/__pycache__/
+tools/sign-art/.venv/
 *.pyc

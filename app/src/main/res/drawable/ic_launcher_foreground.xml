@@ -6,32 +6,32 @@
     android:viewportHeight="108">
     <path
         android:fillColor="#1B1F24"
-        android:pathData="M54,22 L79,63 L29,63 Z" />
+        android:pathData="M54,29.68 L73,60.84 L35,60.84 Z" />
     <path
         android:fillColor="#F5C400"
-        android:pathData="M54,25.4 L75.8,60.2 L32.2,60.2 Z" />
+        android:pathData="M54,32.26 L70.57,58.71 L37.43,58.71 Z" />
     <path
         android:fillColor="#1B1F24"
-        android:pathData="M51.8,34h4.4v13h-4.4z" />
+        android:pathData="M52.33,38.8h3.34v9.88h-3.34z" />
     <path
         android:fillColor="#1B1F24"
-        android:pathData="M51.8,49.6h4.4v4.4h-4.4z" />
+        android:pathData="M52.33,50.66h3.34v3.34h-3.34z" />
     <path
         android:fillColor="#1B1F24"
-        android:pathData="M21,69 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0" />
+        android:pathData="M28.92,65.4 a12.92,12.92 0 1,0 25.84,0 a12.92,12.92 0 1,0 -25.84,0" />
     <path
         android:fillColor="#C8102E"
-        android:pathData="M22,69 a16,16 0 1,0 32,0 a16,16 0 1,0 -32,0" />
+        android:pathData="M29.68,65.4 a12.16,12.16 0 1,0 24.32,0 a12.16,12.16 0 1,0 -24.32,0" />
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M27.2,69 a10.8,10.8 0 1,0 21.6,0 a10.8,10.8 0 1,0 -21.6,0" />
+        android:pathData="M33.63,65.4 a8.21,8.21 0 1,0 16.42,0 a8.21,8.21 0 1,0 -16.42,0" />
     <path
         android:fillColor="#1B1F24"
-        android:pathData="M53,69 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0" />
+        android:pathData="M53.24,65.4 a12.92,12.92 0 1,0 25.84,0 a12.92,12.92 0 1,0 -25.84,0" />
     <path
         android:fillColor="#0050A0"
-        android:pathData="M54,69 a16,16 0 1,0 32,0 a16,16 0 1,0 -32,0" />
+        android:pathData="M54,65.4 a12.16,12.16 0 1,0 24.32,0 a12.16,12.16 0 1,0 -24.32,0" />
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M70,56.2 L80.4,67.6 H74.3 V81 H65.7 V67.6 H59.6 Z" />
+        android:pathData="M66.16,55.67 L74.06,64.34 H69.43 V74.52 H62.89 V64.34 H58.26 Z" />
 </vector>

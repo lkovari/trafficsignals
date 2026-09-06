@@ -87,7 +87,7 @@ def rasterize(svg_path: Path, png_path: Path) -> bool:
     png_path.parent.mkdir(parents=True, exist_ok=True)
     try:
         subprocess.run(
-            ["rsvg-convert", "-w", "512", "--keep-aspect-ratio", "-o", str(png_path), str(svg_path)],
+            ["rsvg-convert", "-w", "1024", "--keep-aspect-ratio", "-o", str(png_path), str(svg_path)],
             check=True,
             capture_output=True,
         )

@@ -2,16 +2,13 @@ package com.lkovari.mobile.apps.trafficsignals.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.outlined.Copyright
@@ -31,6 +28,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.lkovari.mobile.apps.trafficsignals.R
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -58,84 +56,68 @@ fun AboutScreen(onBack: () -> Unit) {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(inner)
-                .verticalScroll(rememberScrollState())
-                .padding(24.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+                .padding(horizontal = 16.dp, vertical = 8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(6.dp)
         ) {
             Image(
                 painter = painterResource(R.drawable.ic_launcher_foreground),
                 contentDescription = null,
-                modifier = Modifier.size(96.dp)
+                modifier = Modifier.size(56.dp)
             )
-            Spacer(modifier = Modifier.height(16.dp))
             Text(
                 text = stringResource(R.string.about_appname),
-                style = MaterialTheme.typography.titleLarge
+                style = MaterialTheme.typography.titleMedium,
+                textAlign = TextAlign.Center
             )
-            Spacer(modifier = Modifier.height(12.dp))
             Text(
                 text = stringResource(R.string.about_description),
-                style = MaterialTheme.typography.bodyLarge
+                style = MaterialTheme.typography.bodySmall.copy(lineHeight = 16.sp),
+                textAlign = TextAlign.Center
             )
-            Spacer(modifier = Modifier.height(12.dp))
             Text(
                 text = stringResource(R.string.about_author),
-                style = MaterialTheme.typography.bodyMedium
+                style = MaterialTheme.typography.bodySmall
             )
-            Spacer(modifier = Modifier.height(12.dp))
             Text(
                 text = stringResource(R.string.about_artwork),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                style = MaterialTheme.typography.bodySmall.copy(lineHeight = 16.sp),
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = TextAlign.Center
             )
-            Spacer(modifier = Modifier.height(20.dp))
             Text(
                 text = stringResource(R.string.about_source_label),
-                style = MaterialTheme.typography.titleMedium
-            )
-            Spacer(modifier = Modifier.height(6.dp))
-            Text(
-                text = sourceUrl,
-                style = MaterialTheme.typography.bodyMedium,
+                style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary,
-                textAlign = TextAlign.Center,
                 textDecoration = TextDecoration.Underline,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clickable { uriHandler.openUri(sourceUrl) }
+                modifier = Modifier.clickable { uriHandler.openUri(sourceUrl) }
             )
-            Spacer(modifier = Modifier.height(20.dp))
             Text(
                 text = stringResource(R.string.about_privacy_policy),
-                style = MaterialTheme.typography.titleMedium
-            )
-            Spacer(modifier = Modifier.height(6.dp))
-            Text(
-                text = privacyUrl,
-                style = MaterialTheme.typography.bodyMedium,
+                style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary,
-                textAlign = TextAlign.Center,
                 textDecoration = TextDecoration.Underline,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clickable { uriHandler.openUri(privacyUrl) }
+                modifier = Modifier.clickable { uriHandler.openUri(privacyUrl) }
             )
-            Spacer(modifier = Modifier.height(20.dp))
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
                 Text(
                     text = stringResource(R.string.about_copyright_prefix),
-                    style = MaterialTheme.typography.bodyMedium
+                    style = MaterialTheme.typography.bodySmall
                 )
                 Icon(
                     imageVector = Icons.Outlined.Copyright,
                     contentDescription = null,
                     modifier = Modifier
                         .padding(horizontal = 4.dp)
-                        .size(16.dp)
+                        .size(14.dp)
                 )
                 Text(
                     text = stringResource(R.string.about_copyright_holder),
-                    style = MaterialTheme.typography.bodyMedium
+                    style = MaterialTheme.typography.bodySmall
                 )
             }
         }
