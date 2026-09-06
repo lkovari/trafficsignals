@@ -15,7 +15,7 @@
     <string name="about_appname">Hungarian Traffic Signals</string>
     <string name="about_description">Browse Hungarian KRESZ traffic signs by category. Open a category to see every sign in that group, then tap a sign for a full-size image and description. Descriptions follow the device language: Hungarian when the locale is Hungarian, English otherwise.</string>
     <string name="about_author">Author: László Kőváry</string>
-    <string name="about_artwork">Replacement sign diagrams are based on Hungarian KRESZ tables and Wikimedia Commons SVG road-sign diagrams. Original raster artwork is kept where no matching diagram was available.</string>
+    <string name="about_artwork">Replacement sign diagrams are based on Hungarian KRESZ tables and Wikimedia Commons SVG road-sign diagrams. Police-signal drawings are original educational diagrams. Original raster artwork is kept where no matching diagram was available.</string>
     <string name="about_source_label">Original source</string>
     <string name="about_source_url" translatable="false">https://bitbucket.org/laszlokovary/trafficsignals-e/src/master/</string>
     <string name="about_copyright_prefix">Copyright</string>
@@ -31,7 +31,19 @@
     <string name="kategoria_kiegeszito">Additional signs</string>
     <string name="kategoria_utburkolatijelek">Road markings</string>
     <string name="kategoria_fenyjelzokeszulekek">Traffic signals</string>
+    <string name="kategoria_rendori">Police signals</string>
     <string name="category_sign_count">%d signs</string>
+
+    <string name="rendori_karokoldalra">Officer with both arms outstretched. Traffic parallel to the arms may go; traffic facing the chest or back must stop. Officer signals override signs and lights.</string>
+    <string name="rendori_karfuggoleges">One arm raised vertically. Change of direction: stop if you can, leave the junction if you are already in it. Pedestrians must not step onto the carriageway.</string>
+    <string name="rendori_balramogott">Traffic from the officer\'s right may go ahead, right, or turn left behind the officer. All other directions must stop.</string>
+    <string name="rendori_balraelott">Traffic from the officer\'s left may go ahead, right, or turn left in front of the officer. All other directions must stop.</string>
+    <string name="rendori_alapallas">Rest stance, arms at the sides. Same meaning as arms outstretched: go from the sides, stop from the front or back.</string>
+    <string name="rendori_gyorsitas">Arm beckoning toward the body. Speed up. Applies only to traffic already allowed to proceed.</string>
+    <string name="rendori_lassitas">Arm moving up and down. Slow down. Applies only to traffic already allowed to proceed.</string>
+    <string name="rendori_megallitotarcsa">Stop for a white-rimmed red disc or a raised arm. The same stop signal may be given by a public-space warden and by other entitled persons (military traffic regulator, disaster management, customs, fire, transport authority inspector). Officer signals override signs and lights.</string>
+    <string name="rendori_megallitasjarmubol">Stop when a moving police vehicle signals with lights, a disc or lamp moved up and down, a loudspeaker, or a STOP inscription. Follow the instruction. Officer signals override signs and lights.</string>
+    <string name="rendori_jelzoor">Stop for a flagman or civil-guard flagman showing a red disc or a red lamp. Advance warning is the railway/roadworks warning sign with the signalman plate.</string>
 
     <string name="utvonaltipus_autopalyakezdete">Start of motorway regulations</string>
     <string name="utvonaltipus_autopalyavege">End of motorway regulations</string>
@@ -54,10 +66,15 @@
     <string name="utasitastado_kotelezohaladasiiranybalra">Proceed in direction indicated by the arrow. Left.</string>
     <string name="utasitastado_kotelezohaladasiiranybalra1">Proceed in direction indicated by the arrow. Left.</string>
     <string name="utasitastado_kotelezohaladasiiranybalravissza">Proceed in direction indicated by the arrow. Left or U-Turn.</string>
+    <string name="utasitastado_kotelezomegfordulas">U-turn only. Proceed only by turning around as shown.</string>
     <string name="utasitastado_kotelezohaladasiiranybalraesegyenesen">Proceed in direction indicated by the arrow. Left and ahead.</string>
+    <string name="utasitastado_kotelezohaladasiiranyjobbraesegyenesen">Proceed in direction indicated by the arrow. Ahead or right.</string>
     <string name="utasitastado_kotelezohaladasiiranybalraesjobbra">Proceed in direction indicated by the arrow. Left and Right</string>
+    <string name="utasitastado_kotelezohaladasiiranyharomirany">Proceed ahead, left or right. U-turn is not allowed by this sign.</string>
     <string name="utasitastado_kotelezohaladasiiranyjobbra">Proceed in direction indicated by the arrow. Right</string>
     <string name="utasitastado_kotelezohaladasiiranyjobbra1">Proceed in direction indicated by the arrow. Right.</string>
+    <string name="utasitastado_kotelezohaladasiiranyjobbraelore">Turn right ahead, following the curved arrow.</string>
+    <string name="utasitastado_kotelezohaladasiiranybalraelore">Turn left ahead, following the curved arrow.</string>
     <string name="utasitastado_kotelezohaladasiiranysalakban">Proceed in the direction indicated by the arrows.</string>
     <string name="utasitastado_kerekparjelzettiranybanhaladhat">Vehicle (cycle) which shown on additional board, proceed in direction indicated by the arrow.</string>
     <string name="utasitastado_autobuszjelzettiranybanhaladhat">Vehicle (bus) which shown on additional board, proceed in direction indicated by the arrow.</string>
@@ -99,11 +116,13 @@
     <string name="tilalmi_jarmuszerelvennyelbehajtanitilos">No towed caravans!</string>
     <string name="tilalmi_jobbrabekanyarodnitilos">No turn right!</string>
     <string name="tilalmi_kerekparralbehajtanitilos">No entry with pedal cycles!</string>
+    <string name="tilalmi_segedmotorossalbehajtanitilos">No mopeds. Mopeds and similar two-wheelers shown on the sign must not enter.</string>
     <string name="tilalmi_kezikocsivalbemennitilos">No entry with handcart!</string>
     <string name="tilalmi_kornyezetvedelmiovezet">Environment zone!</string>
     <string name="tilalmi_kornyezetvedelmiovezetkek">Environment zone! No entry those vehicles which environmental signature on license plate shown on additional board!</string>
     <string name="tilalmi_kornyezetvedelmiovezetvege">End of environment zone!</string>
     <string name="tilalmi_kotelezomegallasvamcustoms">Forced STOP! Customs!</string>
+    <string name="tilalmi_kotelezomegallasrendorseg">Mandatory stop — police. Stop at the checkpoint.</string>
     <string name="tilalmi_legkisebbkovetesitavolsag">Minimum driving distance between vehicles!</string>
     <string name="tilalmi_legkisebbkovetesitavolsag1">Minimum driving distance between vehicles!</string>
     <string name="tilalmi_megallnitilos">No stopping, not even to pick up or set down passengers!</string>
@@ -114,6 +133,7 @@
     <string name="tilalmi_motorkerekparralbehajtanitilos">No motorcycles! Motorcycles, motorcycles with sidecar, tricycles!</string>
     <string name="tilalmi_motorkerekparraszgkvalbehajtanitilos">No motorcycles and automotive vehicles!</string>
     <string name="tilalmi_ossztomegkorlatozas55t">No vehicles over the maximum gross weight!</string>
+    <string name="tilalmi_tengelyterheleskorlatozas">No vehicles over the axle weight shown on the sign.</string>
     <string name="tilalmi_sebessegkorlatozas30">The maximum speed in km per hour!</string>
     <string name="tilalmi_magassagkorlatozas36m">No vehicles over the height shown may pass the sign!</string>
     <string name="tilalmi_szelessegkorlatozas2m">No vehicles over maxumum width shown!</string>
@@ -193,6 +213,7 @@
     <string name="veszely_fenysorompo_szabad">Level crossing light signal is flashing white, it means allows traffic!</string>
     <string name="veszely_fenysorompo_tilos">Level crossing light signal alternatelly flashing red, it means prohibits any traffic!</string>
     <string name="veszely_fenysorompo_uzemenkivul">Level crossing light signal no illumination at all it means, malfunction, forced stop!</string>
+    <string name="veszely_fenyjelzokeszulek">Traffic signals ahead. A signal-controlled junction or crossing follows.</string>
     <string name="veszely_jelzoorrelbiztositottatkelo">Level crossing with signalman!</string>
     <string name="veszely_fenysorompovalbiztositottatkelo">Level crossing with half barrier and light signals!</string>
     <string name="kulonleges_gyalogosatkelohely">Designated pedestrian crossing</string>
@@ -283,12 +304,15 @@
     <string name="kulonleges_varakozasiengedely">Waiting permission such as doctors, nurses etc.</string>
     <string name="kulonleges_korlatozottvarakozasiovezet">No stopping zone</string>
     <string name="kulonleges_korlatozottvarakozasiovezetvege">End of no stopping zone</string>
+    <string name="kulonleges_korlatozottsebesseguovezet">Maximum speed zone. The speed shown on the sign is the limit until the end-of-zone sign.</string>
+    <string name="kulonleges_korlatozottsebesseguovezetvege">End of maximum speed zone. Default speed limits apply again.</string>
     <string name="kulonleges_lakotteruletkezdete">Built-up Area beginning. Signs indicating county, town or village boundaries.</string>
     <string name="kulonleges_lakotteruletkezdete1">Built-up Area beginning. Signs indicating county, town or village boundaries.</string>
     <string name="kulonleges_lakotteruletkezdete2">Built-up Area beginning. Signs indicating county, town or village boundaries.</string>
     <string name="kulonleges_lakotteruletvege">End of built-up Area</string>
     <string name="kulonleges_lakotteruletvege1">End of built-up Area</string>
     <string name="kulonleges_lakotteruletvege2">End of built-up Area</string>
+    <string name="tajekoztato_altalanossebesseghatarok">National default speed limits: built-up area, rural road, expressway and motorway.</string>
     <string name="kulonleges_parkoljesutazz">Park and ride</string>
     <string name="kulonleges_parkoljesutazzautobusszal">Park and ride with bus</string>
     <string name="kulonleges_parkoljesutazzmetroval">Park and ride with metro</string>

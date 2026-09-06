@@ -11,8 +11,8 @@ import java.io.File
 
 class SignCatalogTest {
     @Test
-    fun nineCategories() {
-        assertEquals(9, SignCatalog.categories.size)
+    fun tenCategories() {
+        assertEquals(10, SignCatalog.categories.size)
     }
 
     @Test
@@ -23,16 +23,17 @@ class SignCatalogTest {
 
     @Test
     fun categoryCountsMatchLegacyCatalog() {
+        assertEquals(10, SignCatalog.signsIn(SignCategory.Police).size)
         assertEquals(8, SignCatalog.signsIn(SignCategory.RouteType).size)
         assertEquals(9, SignCatalog.signsIn(SignCategory.Priority).size)
-        assertEquals(38, SignCatalog.signsIn(SignCategory.Mandatory).size)
-        assertEquals(43, SignCatalog.signsIn(SignCategory.Prohibitory).size)
-        assertEquals(64, SignCatalog.signsIn(SignCategory.Warning).size)
-        assertEquals(105, SignCatalog.signsIn(SignCategory.Information).size)
+        assertEquals(43, SignCatalog.signsIn(SignCategory.Mandatory).size)
+        assertEquals(46, SignCatalog.signsIn(SignCategory.Prohibitory).size)
+        assertEquals(65, SignCatalog.signsIn(SignCategory.Warning).size)
+        assertEquals(108, SignCatalog.signsIn(SignCategory.Information).size)
         assertEquals(46, SignCatalog.signsIn(SignCategory.Additional).size)
         assertEquals(26, SignCatalog.signsIn(SignCategory.RoadMarking).size)
         assertEquals(16, SignCatalog.signsIn(SignCategory.TrafficLight).size)
-        assertEquals(355, SignCatalog.signs.size)
+        assertEquals(377, SignCatalog.signs.size)
     }
 
     @Test
@@ -58,6 +59,7 @@ class SignCatalogTest {
 
     private fun stringNameFor(category: SignCategory): String {
         return when (category) {
+            SignCategory.Police -> "kategoria_rendori"
             SignCategory.RouteType -> "kategoria_utvonaltipus"
             SignCategory.Priority -> "kategoria_elsobsegetszabalyozo"
             SignCategory.Mandatory -> "kategoria_utasitastado"

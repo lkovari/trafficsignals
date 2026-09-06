@@ -5,9 +5,11 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -38,6 +40,7 @@ fun AboutScreen(onBack: () -> Unit) {
     val sourceUrl = stringResource(R.string.about_source_url)
     val privacyUrl = stringResource(R.string.about_privacy_url)
     Scaffold(
+        contentWindowInsets = WindowInsets.safeDrawing,
         topBar = {
             TopAppBar(
                 title = { Text(stringResource(R.string.menu_info)) },
@@ -63,7 +66,7 @@ fun AboutScreen(onBack: () -> Unit) {
             Image(
                 painter = painterResource(R.drawable.ic_launcher_foreground),
                 contentDescription = null,
-                modifier = Modifier.size(56.dp)
+                modifier = Modifier.size(72.dp)
             )
             Text(
                 text = stringResource(R.string.about_appname),

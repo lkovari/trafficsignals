@@ -62,7 +62,35 @@ def fill(color: str, data: str) -> str:
     return f'    <path\n        android:fillColor="{color}"\n        android:pathData="{data}" />'
 
 
+def fill_stroke(color: str, data: str, width: float = 1.8) -> str:
+    return (
+        f'    <path\n'
+        f'        android:fillColor="{color}"\n'
+        f'        android:strokeColor="{BLACK}"\n'
+        f'        android:strokeWidth="{width}"\n'
+        f'        android:strokeLineJoin="round"\n'
+        f'        android:strokeLineCap="round"\n'
+        f'        android:pathData="{data}" />'
+    )
+
+
 ICONS = {
+    "kategoria_rendori": vector(
+        fill(BLACK, "M34,10 h24 v8 H34 Z"),
+        fill(BLACK, "M30,16 h32 v5 H30 Z"),
+        fill_stroke(WHITE_HEX, circ(46, 28, 11), 2.0),
+        fill_stroke(BLUE, "M32,40 h28 v40 H32 Z", 2.0),
+        fill_stroke(WHITE_HEX, "M32,57 h28 v8 H32 Z", 1.6),
+        fill_stroke(BLUE, "M6,46 h26 v10 H6 Z", 1.8),
+        fill_stroke(BLUE, "M60,46 h18 v10 H60 Z", 1.8),
+        fill_stroke(WHITE_HEX, circ(8, 51, 5.5), 1.6),
+        fill_stroke(WHITE_HEX, circ(80, 51, 5.5), 1.6),
+        fill(BLACK, "M36,80 h8 v24 H36 Z"),
+        fill(BLACK, "M48,80 h8 v24 H48 Z"),
+        fill_stroke(RED, circ(90, 32, 15), 1.8),
+        fill(WHITE_HEX, circ(90, 32, 9)),
+        fill(RED, circ(90, 32, 6)),
+    ),
     "kategoria_elsobseg": vector(
         fill(RED, "M10,14 L98,14 L54,100 Z"),
         fill(WHITE_HEX, "M26,26 L82,26 L54,82 Z"),
@@ -96,10 +124,9 @@ ICONS = {
         fill(BLACK, "M30,30 L78,30 L54,76 Z"),
     ),
     "kategoria_fenyjelzo": vector(
-        fill(BLACK, rounded_square(34, 8, 40, 10)),
-        fill(RED, circ(54, 26, 10)),
-        fill(YELLOW, circ(54, 54, 10)),
-        fill(GREEN, circ(54, 82, 10)),
+        fill_stroke(RED, circ(54, 20, 13), 1.8),
+        fill_stroke(YELLOW, circ(54, 54, 13), 1.8),
+        fill_stroke(GREEN, circ(54, 88, 13), 1.8),
     ),
 }
 

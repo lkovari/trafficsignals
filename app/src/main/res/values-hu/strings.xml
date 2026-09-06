@@ -15,7 +15,7 @@
     <string name="about_appname">Magyar Közlekedési Jelzések</string>
     <string name="about_description">Böngéssze a magyar KRESZ táblákat kategóriák szerint. Egy kategória megnyitása után megjelennek a csoport táblái, egy táblára koppintva pedig a nagy kép és a leírás. A leírás nyelve a készülék nyelvéhez igazodik: magyar, ha a locale magyar, egyébként angol.</string>
     <string name="about_author">Szerző: Kőváry László</string>
-    <string name="about_artwork">A csereábrák a magyar KRESZ táblagyűjtemények és a Wikimedia Commons SVG közúti jelzésábrái alapján készültek. Ahol nem volt megfelelő ábra, az eredeti raszteres kép maradt.</string>
+    <string name="about_artwork">A csereábrák a magyar KRESZ táblagyűjtemények és a Wikimedia Commons SVG közúti jelzésábrái alapján készültek. A rendőri jelzések eredeti oktatási ábrák. Ahol nem volt megfelelő ábra, az eredeti raszteres kép maradt.</string>
     <string name="about_source_label">Eredeti forrás</string>
     <string name="about_copyright_prefix">Copyright</string>
     <string name="about_copyright_holder">2016 - 2026 Kővári László</string>
@@ -29,7 +29,19 @@
     <string name="kategoria_kiegeszito">Kiegészítő táblák</string>
     <string name="kategoria_utburkolatijelek">Útburkolati jelek</string>
     <string name="kategoria_fenyjelzokeszulekek">Fényjelző készülék</string>
+    <string name="kategoria_rendori">Rendőri jelzések</string>
     <string name="category_sign_count">%d tábla</string>
+
+    <string name="rendori_karokoldalra">Mindkét kar oldalra kinyújtva. A karral párhuzamos irányból szabad az út; mellkas vagy hát felől meg kell állni. A rendőr jelzése a táblákat és a lámpát is felülírja.</string>
+    <string name="rendori_karfuggoleges">Egyik kar függőlegesen a magasba. Irányváltás: aki eddig mehetett, álljon meg, ha tud; aki a kereszteződésben van, hagyja el. Gyalogos az úttestre nem léphet.</string>
+    <string name="rendori_balramogott">A jobbról érkezők mehetnek egyenesen, jobbra, és a rendőr mögött balra. Minden más irány tilos.</string>
+    <string name="rendori_balraelott">A balról érkezők mehetnek egyenesen, jobbra, és a rendőr előtt balra. Minden más irány tilos.</string>
+    <string name="rendori_alapallas">Alapállás, karok a test mellett. Ugyanaz, mint a kinyújtott kar: oldalnézetből szabad, mellkas vagy hát felől tilos.</string>
+    <string name="rendori_gyorsitas">Kinyújtott kar maga felé int: gyorsítás. Csak a szabad jelzés szerint közlekedőkre vonatkozik.</string>
+    <string name="rendori_lassitas">A kar fel-le mozog: lassítás. Csak a szabad jelzés szerint közlekedőkre vonatkozik.</string>
+    <string name="rendori_megallitotarcsa">Meg kell állni a fehér szegélyű piros tárcsára vagy a feltartott karra. Ugyanezt adhatja a közterület-felügyelő, valamint más jogosult (katonai forgalomszabályozó, katasztrófavédelem, vám, tűzoltó, közlekedési hatóság ellenőre). A jelzés a táblákat és a lámpát is felülírja.</string>
+    <string name="rendori_megallitasjarmubol">Meg kell állni, ha mozgó rendőrjármű megkülönböztető jelzéssel, fel-le mozgatott tárcsával vagy lámpával, hangszóróval vagy ÁLLJ/STOP felirattal utasít. A jelzés a táblákat és a lámpát is felülírja.</string>
+    <string name="rendori_jelzoor">A jelzőőr vagy polgárőr piros tárcsájára vagy piros lámpájára meg kell állni. Előjelzése a veszélyt jelző tábla és a jelzőőr kiegészítő tábla.</string>
 
     <string name="utvonaltipus_autopalyakezdete">Autópálya kezdete</string>
     <string name="utvonaltipus_autopalyavege">Autópálya vége</string>
@@ -52,10 +64,15 @@
     <string name="utasitastado_kotelezohaladasiiranybalra">Kötelező haladási irány balra. A táblán jelzett irányban szabad továbbhaladni.</string>
     <string name="utasitastado_kotelezohaladasiiranybalra1">Kötelező haladási irány balra. A táblán jelzett irányban szabad továbbhaladni.</string>
     <string name="utasitastado_kotelezohaladasiiranybalravissza">Kötelező haladási irány balra vagy visszavordulva. A táblán jelzett irányban szabad továbbhaladni.</string>
+    <string name="utasitastado_kotelezomegfordulas">Kötelező megfordulás. Csak a táblán jelzett megfordulás irányában szabad továbbhaladni.</string>
     <string name="utasitastado_kotelezohaladasiiranybalraesegyenesen">Kötelező haladási irány balra és egyenesen. A táblán jelzett irányban szabad továbbhaladni.</string>
+    <string name="utasitastado_kotelezohaladasiiranyjobbraesegyenesen">Kötelező haladási irány egyenesen vagy jobbra. A táblán jelzett irányban szabad továbbhaladni.</string>
     <string name="utasitastado_kotelezohaladasiiranybalraesjobbra">Kötelező haladási irány balra és jobbra. A táblán jelzett irányban szabad továbbhaladni.</string>
+    <string name="utasitastado_kotelezohaladasiiranyharomirany">Kötelező haladási irány egyenesen, balra vagy jobbra. Megfordulni e tábla alapján nem szabad.</string>
     <string name="utasitastado_kotelezohaladasiiranyjobbra">Kötelező haladási irány jobbra. A táblán jelzett irányban szabad továbbhaladni.</string>
     <string name="utasitastado_kotelezohaladasiiranyjobbra1">Kötelező haladási irány jobbra. A táblán jelzett irányban szabad továbbhaladni.</string>
+    <string name="utasitastado_kotelezohaladasiiranyjobbraelore">Kötelező haladási irány jobbra, előre kanyarodva.</string>
+    <string name="utasitastado_kotelezohaladasiiranybalraelore">Kötelező haladási irány balra, előre kanyarodva.</string>
     <string name="utasitastado_kotelezohaladasiiranysalakban">Kötelező haladási irány a táblán jelzett nyilak szerint.</string>
     <string name="utasitastado_kerekparjelzettiranybanhaladhat">A jármű (kerékpár) jelképét feltüntető kiegészítő táblán lévő nyíl (nyilak) által jelzett irányban haladhat tovább</string>
     <string name="utasitastado_autobuszjelzettiranybanhaladhat">A jármű (autóbusz) jelképét feltüntető kiegészítő táblán lévő nyíl (nyilak) által jelzett irányban haladhat tovább</string>
@@ -97,11 +114,13 @@
     <string name="tilalmi_jarmuszerelvennyelbehajtanitilos">Járműszerelvénnyel behajtani tilos!</string>
     <string name="tilalmi_jobbrabekanyarodnitilos">Jobbra bekanyarodni tilos!</string>
     <string name="tilalmi_kerekparralbehajtanitilos">Kerékpárral behajtani tilos!</string>
+    <string name="tilalmi_segedmotorossalbehajtanitilos">Segédmotoros kerékpárral behajtani tilos!</string>
     <string name="tilalmi_kezikocsivalbemennitilos">Kézikocsival bemenni tilos!</string>
     <string name="tilalmi_kornyezetvedelmiovezet">Környezetvédelmi övezet!</string>
     <string name="tilalmi_kornyezetvedelmiovezetkek">Környezetvédelmi övezet! Behajtani tilos azongépjárművekkel melyek a környezetvédelmi igazolólaphoz tartozó hatósági jelzésen /rendszámtáblán/ megjelölt szinnel azonos a kiegészítő táblán megjelölt színjelzés!</string>
     <string name="tilalmi_kornyezetvedelmiovezetvege">Környezetvédelmi övezet vége!</string>
     <string name="tilalmi_kotelezomegallasvamcustoms">Kötelező megállás VÁM!</string>
+    <string name="tilalmi_kotelezomegallasrendorseg">Kötelező megállás RENDŐRSÉG. Az ellenőrző pontnál meg kell állni.</string>
     <string name="tilalmi_legkisebbkovetesitavolsag">Legkisebb követési távolság!</string>
     <string name="tilalmi_legkisebbkovetesitavolsag1">Legkisebb követési távolság!</string>
     <string name="tilalmi_megallnitilos">Megállni tilos!</string>
@@ -112,6 +131,7 @@
     <string name="tilalmi_motorkerekparralbehajtanitilos">Motorkerékpárral behajtani tilos! Motorkerékpárral, oldalkocsis motorkerékpárral és motoros triciklivel behajtani tilos!</string>
     <string name="tilalmi_motorkerekparraszgkvalbehajtanitilos">Motorkerékpárral és gépjárművel behajtani tilos!</string>
     <string name="tilalmi_ossztomegkorlatozas55t">Össztömeg korlátozás! Az úton a táblán megjelölt nél nagyobb össztömegű járművel (járműszerelvénnyel) közlekedni tilos!</string>
+    <string name="tilalmi_tengelyterheleskorlatozas">Tengelyterhelés-korlátozás. A táblán megjelöltnél nagyobb tengelyterhelésű járművel közlekedni tilos.</string>
     <string name="tilalmi_sebessegkorlatozas30">Sebességkorlátozás!</string>
     <string name="tilalmi_magassagkorlatozas36m">Magasságkorlátozás!</string>
     <string name="tilalmi_szelessegkorlatozas2m">Szélességkorlátozás! Az így megjelölt úton a táblán megjelöltnél (rakományával együtt) szélesebb járművel közlekedni tilos!</string>
@@ -191,6 +211,7 @@
     <string name="veszely_fenysorompo_szabad">Fénysorompó villogó fehér fényjelzése szabad áthaladás jelzése</string>
     <string name="veszely_fenysorompo_tilos">Felváltva villogó piros fényjelzés tilos az áthaladás!</string>
     <string name="veszely_fenysorompo_uzemenkivul">Fénysorompó sötét, műszaki meghibásodás, kötelező megállás!</string>
+    <string name="veszely_fenyjelzokeszulek">Forgalomirányító fényjelző készülék. Lámpával irányított kereszteződés vagy átkelő következik.</string>
     <string name="veszely_jelzoorrelbiztositottatkelo">A tábla jelzőőrrel biztosított helyet jelöl, ami lehet vasúti átkelőhely is!</string>
     <string name="veszely_fenysorompovalbiztositottatkelo">A tábla félsorompóval és fénysorompóval biztosított vasúti átkelőhelyet jelöl</string>
     <string name="kulonleges_gyalogosatkelohely">Kijelölt gyalogosátkelő hely</string>
@@ -281,12 +302,15 @@
     <string name="kulonleges_varakozasiengedely">Várakozási engedély</string>
     <string name="kulonleges_korlatozottvarakozasiovezet">Korlátozott várakozási övezet</string>
     <string name="kulonleges_korlatozottvarakozasiovezetvege">Korlátozott várakozási övezet vége</string>
+    <string name="kulonleges_korlatozottsebesseguovezet">Korlátozott sebességű övezet. A táblán megjelölt sebesség a zóna végéig a megengedett legnagyobb sebesség.</string>
+    <string name="kulonleges_korlatozottsebesseguovezetvege">Korlátozott sebességű övezet vége. Ismét az általános sebességhatárok érvényesek.</string>
     <string name="kulonleges_lakotteruletkezdete">Lakotterület kezdete</string>
     <string name="kulonleges_lakotteruletkezdete1">Lakotterület kezdete</string>
     <string name="kulonleges_lakotteruletkezdete2">Lakotterület kezdete</string>
     <string name="kulonleges_lakotteruletvege">Lakotterület vége</string>
     <string name="kulonleges_lakotteruletvege1">Lakotterület vége</string>
     <string name="kulonleges_lakotteruletvege2">Lakotterület vége</string>
+    <string name="tajekoztato_altalanossebesseghatarok">Általános sebességhatárok: lakott terület, lakott területen kívül, autóút és autópálya.</string>
     <string name="kulonleges_parkoljesutazz">Parkolj és utazz</string>
     <string name="kulonleges_parkoljesutazzautobusszal">Parkolj és utazz autóbusszal</string>
     <string name="kulonleges_parkoljesutazzmetroval">Parkolj és utazz metróval</string>

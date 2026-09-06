@@ -354,3 +354,25 @@ fenyjelzo_veszely_piros,TrafficLight,fenyjelzo_veszely_piros.png,Piros fény a t
 fenyjelzo_zoldj,TrafficLight,fenyjelzo_zoldj.png,Szabad utat jelez a jelzett irányban!,Green means go if the way is clear!,,,original
 fenyjelzo_zoldjj,TrafficLight,fenyjelzo_zoldjj.png,Szabad utat jelez a jelzett irányban!,Green means go on the signaled direction only!,,,original
 fenyjelzo_bus,TrafficLight,fenyjelzo_bus.png,Szabad utat jelez a buszok számára!,Green means go for buses only!,,,original
+rendori_karokoldalra,Police,rendori_karokoldalra.png,Mindkét kar oldalra kinyújtva,Officer with both arms outstretched,,,original
+rendori_karfuggoleges,Police,rendori_karfuggoleges.png,Kar függőlegesen a magasba,One arm raised vertically,,,original
+rendori_balramogott,Police,rendori_balramogott.png,Balra a rendőr mögött,Left turn behind the officer,,,original
+rendori_balraelott,Police,rendori_balraelott.png,Balra a rendőr előtt,Left turn in front of the officer,,,original
+rendori_alapallas,Police,rendori_alapallas.png,Alapállás kar nélkül,Rest stance arms at the sides,,,original
+rendori_gyorsitas,Police,rendori_gyorsitas.png,Gyorsítás karjelzés,Arm beckoning to speed up,,,original
+rendori_lassitas,Police,rendori_lassitas.png,Lassítás karjelzés,Arm pumping to slow down,,,original
+rendori_megallitotarcsa,Police,rendori_megallitotarcsa.png,Megállító tárcsa,White-rimmed red stop disc,,,original
+rendori_megallitasjarmubol,Police,rendori_megallitasjarmubol.png,Megállítás mozgó rendőrjárműből,Stop from a moving police vehicle,,,original
+rendori_jelzoor,Police,rendori_jelzoor.png,Jelzőőr megállító jelzése,Flagman red disc or lamp,,,original
+veszely_fenyjelzokeszulek,Warning,veszely_fenyjelzokeszulek.png,Forgalomirányító fényjelző készülék,Traffic signals ahead,A-026,Hungary road sign A-026.svg,wikimedia
+tilalmi_segedmotorossalbehajtanitilos,Prohibitory,tilalmi_segedmotorossalbehajtanitilos.png,Segédmotoros kerékpárral behajtani tilos,No mopeds,C-006,Hungary road sign C-006.svg,wikimedia
+tilalmi_tengelyterheleskorlatozas,Prohibitory,tilalmi_tengelyterheleskorlatozas.png,Tengelyterhelés-korlátozás,Axle weight limit,C-024,Hungary road sign C-024.svg,wikimedia
+tilalmi_kotelezomegallasrendorseg,Prohibitory,tilalmi_kotelezomegallasrendorseg.png,Kötelező megállás RENDŐRSÉG,Mandatory stop — police,C-041,Hungary road sign C-041.svg,wikimedia
+utasitastado_kotelezohaladasiiranyjobbraesegyenesen,Mandatory,utasitastado_kotelezohaladasiiranyjobbraesegyenesen.png,Kötelező haladási irány egyenesen vagy jobbra,Proceed ahead or right,D-005,Hungary road sign D-005.svg,wikimedia
+utasitastado_kotelezohaladasiiranyjobbraelore,Mandatory,utasitastado_kotelezohaladasiiranyjobbraelore.png,"Kötelező haladási irány jobbra, előre kanyarodva",Turn right ahead,D-006,Hungary road sign D-006.svg,wikimedia
+utasitastado_kotelezohaladasiiranybalraelore,Mandatory,utasitastado_kotelezohaladasiiranybalraelore.png,"Kötelező haladási irány balra, előre kanyarodva",Turn left ahead,D-007,Hungary road sign D-007.svg,wikimedia
+utasitastado_kotelezohaladasiiranyharomirany,Mandatory,utasitastado_kotelezohaladasiiranyharomirany.png,"Kötelező haladási irány egyenesen, balra vagy jobbra","Ahead, left or right",D-011,Hungary road sign D-011.svg,wikimedia
+utasitastado_kotelezomegfordulas,Mandatory,utasitastado_kotelezomegfordulas.png,Kötelező megfordulás,U-turn only,D-012,Hungary road sign D-012.svg,wikimedia
+kulonleges_korlatozottsebesseguovezet,Information,kulonleges_korlatozottsebesseguovezet.png,Korlátozott sebességű övezet,Maximum speed zone,E-028,Hungary road sign E-028.svg,wikimedia
+kulonleges_korlatozottsebesseguovezetvege,Information,kulonleges_korlatozottsebesseguovezetvege.png,Korlátozott sebességű övezet vége,End of maximum speed zone,E-029,Hungary road sign E-029.svg,wikimedia
+tajekoztato_altalanossebesseghatarok,Information,tajekoztato_altalanossebesseghatarok.png,Általános sebességhatárok,National default speed limits,G-401,Hungary road sign G-401.svg,wikimedia

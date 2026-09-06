@@ -7,6 +7,15 @@ Versioning matches `versionName` **2.0.0** / `versionCode` **2** (minSdk 24, tar
 
 ## [Unreleased]
 
+### Fixed
+
+- Home category grid stays inside the system safe area on all phones (status bar, gesture/nav bar); tiles shrink to fit four rows instead of clipping.
+
+### Added
+
+- Police signals category (KRESZ 6–7. §): arm signals, stop disc, stop from a moving police vehicle, and flagman.
+- Everyday/exam signs A-026, C-006, C-024, C-041, D-005, D-006, D-007, D-011, D-012, E-028, E-029, G-401.
+
 ## [2.0.0] — 2026-09-06
 
 Kotlin + Jetpack Compose rewrite of the 2011 Eclipse app (`trafficsignals-e`). Privacy policy: https://lkovari.github.io/KLHome/assets/bigfiles/trafficsignals-privacy-policy.html. Play what’s-new: [docs/play-console/whatsnew.txt](docs/play-console/whatsnew.txt).

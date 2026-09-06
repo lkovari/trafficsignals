@@ -2,6 +2,7 @@
 import csv
 import json
 import subprocess
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -104,6 +105,7 @@ def replace_drawable(sign_id: str, png_path: Path) -> None:
 
 
 def main() -> None:
+    only_ids = set(sys.argv[1:]) if len(sys.argv) > 1 else None
     CACHE.mkdir(parents=True, exist_ok=True)
     inventory = []
     with CSV_PATH.open(encoding="utf-8") as handle:
@@ -111,6 +113,8 @@ def main() -> None:
 
     wanted = []
     for row in inventory:
+        if only_ids is not None and row["id"] not in only_ids:
+            continue
         code = ID_TO_CODE.get(row["id"])
         if code:
             row["kresz_code"] = code

@@ -1,6 +1,7 @@
 package com.lkovari.mobile.apps.trafficsignals.data
 
 enum class SignCategory {
+    Police,
     RouteType,
     Priority,
     Mandatory,

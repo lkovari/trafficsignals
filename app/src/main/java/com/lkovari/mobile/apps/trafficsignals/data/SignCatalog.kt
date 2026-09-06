@@ -6,6 +6,16 @@ object SignCatalog {
     val categories: List<SignCategory> = SignCategory.entries
 
     val signs: List<TrafficSign> = listOf(
+        TrafficSign(id = "rendori_karokoldalra", category = SignCategory.Police, imageRes = R.drawable.rendori_karokoldalra, titleRes = R.string.rendori_karokoldalra),
+        TrafficSign(id = "rendori_karfuggoleges", category = SignCategory.Police, imageRes = R.drawable.rendori_karfuggoleges, titleRes = R.string.rendori_karfuggoleges),
+        TrafficSign(id = "rendori_balramogott", category = SignCategory.Police, imageRes = R.drawable.rendori_balramogott, titleRes = R.string.rendori_balramogott),
+        TrafficSign(id = "rendori_balraelott", category = SignCategory.Police, imageRes = R.drawable.rendori_balraelott, titleRes = R.string.rendori_balraelott),
+        TrafficSign(id = "rendori_alapallas", category = SignCategory.Police, imageRes = R.drawable.rendori_alapallas, titleRes = R.string.rendori_alapallas),
+        TrafficSign(id = "rendori_gyorsitas", category = SignCategory.Police, imageRes = R.drawable.rendori_gyorsitas, titleRes = R.string.rendori_gyorsitas),
+        TrafficSign(id = "rendori_lassitas", category = SignCategory.Police, imageRes = R.drawable.rendori_lassitas, titleRes = R.string.rendori_lassitas),
+        TrafficSign(id = "rendori_megallitotarcsa", category = SignCategory.Police, imageRes = R.drawable.rendori_megallitotarcsa, titleRes = R.string.rendori_megallitotarcsa),
+        TrafficSign(id = "rendori_megallitasjarmubol", category = SignCategory.Police, imageRes = R.drawable.rendori_megallitasjarmubol, titleRes = R.string.rendori_megallitasjarmubol),
+        TrafficSign(id = "rendori_jelzoor", category = SignCategory.Police, imageRes = R.drawable.rendori_jelzoor, titleRes = R.string.rendori_jelzoor),
         TrafficSign(id = "utvonaltipus_autopalyakezdete", category = SignCategory.RouteType, imageRes = R.drawable.utvonaltipus_autopalyakezdete, titleRes = R.string.utvonaltipus_autopalyakezdete),
         TrafficSign(id = "utvonaltipus_autopalyavege", category = SignCategory.RouteType, imageRes = R.drawable.utvonaltipus_autopalyavege, titleRes = R.string.utvonaltipus_autopalyavege),
         TrafficSign(id = "utvonaltipus_autoutkezdete", category = SignCategory.RouteType, imageRes = R.drawable.utvonaltipus_autoutkezdete, titleRes = R.string.utvonaltipus_autoutkezdete),
@@ -27,10 +37,15 @@ object SignCatalog {
         TrafficSign(id = "utasitastado_kotelezohaladasiiranybalra", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranybalra, titleRes = R.string.utasitastado_kotelezohaladasiiranybalra),
         TrafficSign(id = "utasitastado_kotelezohaladasiiranybalra1", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranybalra1, titleRes = R.string.utasitastado_kotelezohaladasiiranybalra1),
         TrafficSign(id = "utasitastado_kotelezohaladasiiranybalravissza", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranybalravissza, titleRes = R.string.utasitastado_kotelezohaladasiiranybalravissza),
+        TrafficSign(id = "utasitastado_kotelezomegfordulas", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezomegfordulas, titleRes = R.string.utasitastado_kotelezomegfordulas),
         TrafficSign(id = "utasitastado_kotelezohaladasiiranybalraesegyenesen", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranybalraesegyenesen, titleRes = R.string.utasitastado_kotelezohaladasiiranybalraesegyenesen),
+        TrafficSign(id = "utasitastado_kotelezohaladasiiranyjobbraesegyenesen", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranyjobbraesegyenesen, titleRes = R.string.utasitastado_kotelezohaladasiiranyjobbraesegyenesen),
         TrafficSign(id = "utasitastado_kotelezohaladasiiranybalraesjobbra", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranybalraesjobbra, titleRes = R.string.utasitastado_kotelezohaladasiiranybalraesjobbra),
+        TrafficSign(id = "utasitastado_kotelezohaladasiiranyharomirany", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranyharomirany, titleRes = R.string.utasitastado_kotelezohaladasiiranyharomirany),
         TrafficSign(id = "utasitastado_kotelezohaladasiiranyjobbra", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranyjobbra, titleRes = R.string.utasitastado_kotelezohaladasiiranyjobbra),
         TrafficSign(id = "utasitastado_kotelezohaladasiiranyjobbra1", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranyjobbra1, titleRes = R.string.utasitastado_kotelezohaladasiiranyjobbra1),
+        TrafficSign(id = "utasitastado_kotelezohaladasiiranyjobbraelore", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranyjobbraelore, titleRes = R.string.utasitastado_kotelezohaladasiiranyjobbraelore),
+        TrafficSign(id = "utasitastado_kotelezohaladasiiranybalraelore", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranybalraelore, titleRes = R.string.utasitastado_kotelezohaladasiiranybalraelore),
         TrafficSign(id = "utasitastado_kotelezohaladasiiranysalakban", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kotelezohaladasiiranysalakban, titleRes = R.string.utasitastado_kotelezohaladasiiranysalakban),
         TrafficSign(id = "utasitastado_kerekparjelzettiranybanhaladhat", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_kerekparjelzettiranybanhaladhat, titleRes = R.string.utasitastado_kerekparjelzettiranybanhaladhat),
         TrafficSign(id = "utasitastado_autobuszjelzettiranybanhaladhat", category = SignCategory.Mandatory, imageRes = R.drawable.utasitastado_autobuszjelzettiranybanhaladhat, titleRes = R.string.utasitastado_autobuszjelzettiranybanhaladhat),
@@ -72,11 +87,13 @@ object SignCatalog {
         TrafficSign(id = "tilalmi_jarmuszerelvennyelbehajtanitilos", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_jarmuszerelvennyelbehajtanitilos, titleRes = R.string.tilalmi_jarmuszerelvennyelbehajtanitilos),
         TrafficSign(id = "tilalmi_jobbrabekanyarodnitilos", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_jobbrabekanyarodnitilos, titleRes = R.string.tilalmi_jobbrabekanyarodnitilos),
         TrafficSign(id = "tilalmi_kerekparralbehajtanitilos", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_kerekparralbehajtanitilos, titleRes = R.string.tilalmi_kerekparralbehajtanitilos),
+        TrafficSign(id = "tilalmi_segedmotorossalbehajtanitilos", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_segedmotorossalbehajtanitilos, titleRes = R.string.tilalmi_segedmotorossalbehajtanitilos),
         TrafficSign(id = "tilalmi_kezikocsivalbemennitilos", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_kezikocsivalbemennitilos, titleRes = R.string.tilalmi_kezikocsivalbemennitilos),
         TrafficSign(id = "tilalmi_kornyezetvedelmiovezet", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_kornyezetvedelmiovezet, titleRes = R.string.tilalmi_kornyezetvedelmiovezet),
         TrafficSign(id = "tilalmi_kornyezetvedelmiovezetkek", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_kornyezetvedelmiovezetkek, titleRes = R.string.tilalmi_kornyezetvedelmiovezetkek),
         TrafficSign(id = "tilalmi_kornyezetvedelmiovezetvege", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_kornyezetvedelmiovezetvege, titleRes = R.string.tilalmi_kornyezetvedelmiovezetvege),
         TrafficSign(id = "tilalmi_kotelezomegallasvamcustoms", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_kotelezomegallasvamcustoms, titleRes = R.string.tilalmi_kotelezomegallasvamcustoms),
+        TrafficSign(id = "tilalmi_kotelezomegallasrendorseg", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_kotelezomegallasrendorseg, titleRes = R.string.tilalmi_kotelezomegallasrendorseg),
         TrafficSign(id = "tilalmi_legkisebbkovetesitavolsag", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_legkisebbkovetesitavolsag, titleRes = R.string.tilalmi_legkisebbkovetesitavolsag),
         TrafficSign(id = "tilalmi_legkisebbkovetesitavolsag1", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_legkisebbkovetesitavolsag1, titleRes = R.string.tilalmi_legkisebbkovetesitavolsag1),
         TrafficSign(id = "tilalmi_megallnitilos", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_megallnitilos, titleRes = R.string.tilalmi_megallnitilos),
@@ -87,6 +104,7 @@ object SignCatalog {
         TrafficSign(id = "tilalmi_motorkerekparralbehajtanitilos", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_motorkerekparralbehajtanitilos, titleRes = R.string.tilalmi_motorkerekparralbehajtanitilos),
         TrafficSign(id = "tilalmi_motorkerekparraszgkvalbehajtanitilos", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_motorkerekparraszgkvalbehajtanitilos, titleRes = R.string.tilalmi_motorkerekparraszgkvalbehajtanitilos),
         TrafficSign(id = "tilalmi_ossztomegkorlatozas55t", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_ossztomegkorlatozas55t, titleRes = R.string.tilalmi_ossztomegkorlatozas55t),
+        TrafficSign(id = "tilalmi_tengelyterheleskorlatozas", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_tengelyterheleskorlatozas, titleRes = R.string.tilalmi_tengelyterheleskorlatozas),
         TrafficSign(id = "tilalmi_sebessegkorlatozas30", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_sebessegkorlatozas30, titleRes = R.string.tilalmi_sebessegkorlatozas30),
         TrafficSign(id = "tilalmi_magassagkorlatozas36m", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_magassagkorlatozas36m, titleRes = R.string.tilalmi_magassagkorlatozas36m),
         TrafficSign(id = "tilalmi_szelessegkorlatozas2m", category = SignCategory.Prohibitory, imageRes = R.drawable.tilalmi_szelessegkorlatozas2m, titleRes = R.string.tilalmi_szelessegkorlatozas2m),
@@ -166,6 +184,7 @@ object SignCatalog {
         TrafficSign(id = "veszely_fenysorompo_szabad", category = SignCategory.Warning, imageRes = R.drawable.veszely_fenysorompo_szabad, titleRes = R.string.veszely_fenysorompo_szabad),
         TrafficSign(id = "veszely_fenysorompo_tilos", category = SignCategory.Warning, imageRes = R.drawable.veszely_fenysorompo_tilos, titleRes = R.string.veszely_fenysorompo_tilos),
         TrafficSign(id = "veszely_fenysorompo_uzemenkivul", category = SignCategory.Warning, imageRes = R.drawable.veszely_fenysorompo_uzemenkivul, titleRes = R.string.veszely_fenysorompo_uzemenkivul),
+        TrafficSign(id = "veszely_fenyjelzokeszulek", category = SignCategory.Warning, imageRes = R.drawable.veszely_fenyjelzokeszulek, titleRes = R.string.veszely_fenyjelzokeszulek),
         TrafficSign(id = "veszely_jelzoorrelbiztositottatkelo", category = SignCategory.Warning, imageRes = R.drawable.veszely_jelzoorrelbiztositottatkelo, titleRes = R.string.veszely_jelzoorrelbiztositottatkelo),
         TrafficSign(id = "veszely_fenysorompovalbiztositottatkelo", category = SignCategory.Warning, imageRes = R.drawable.veszely_fenysorompovalbiztositottatkelo, titleRes = R.string.veszely_fenysorompovalbiztositottatkelo),
         TrafficSign(id = "kulonleges_gyalogosatkelohely", category = SignCategory.Information, imageRes = R.drawable.kulonleges_gyalogosatkelohely, titleRes = R.string.kulonleges_gyalogosatkelohely),
@@ -256,12 +275,15 @@ object SignCatalog {
         TrafficSign(id = "kulonleges_varakozasiengedely", category = SignCategory.Information, imageRes = R.drawable.kulonleges_varakozasiengedely, titleRes = R.string.kulonleges_varakozasiengedely),
         TrafficSign(id = "kulonleges_korlatozottvarakozasiovezet", category = SignCategory.Information, imageRes = R.drawable.kulonleges_korlatozottvarakozasiovezet, titleRes = R.string.kulonleges_korlatozottvarakozasiovezet),
         TrafficSign(id = "kulonleges_korlatozottvarakozasiovezetvege", category = SignCategory.Information, imageRes = R.drawable.kulonleges_korlatozottvarakozasiovezetvege, titleRes = R.string.kulonleges_korlatozottvarakozasiovezetvege),
+        TrafficSign(id = "kulonleges_korlatozottsebesseguovezet", category = SignCategory.Information, imageRes = R.drawable.kulonleges_korlatozottsebesseguovezet, titleRes = R.string.kulonleges_korlatozottsebesseguovezet),
+        TrafficSign(id = "kulonleges_korlatozottsebesseguovezetvege", category = SignCategory.Information, imageRes = R.drawable.kulonleges_korlatozottsebesseguovezetvege, titleRes = R.string.kulonleges_korlatozottsebesseguovezetvege),
         TrafficSign(id = "kulonleges_lakotteruletkezdete", category = SignCategory.Information, imageRes = R.drawable.kulonleges_lakotteruletkezdete, titleRes = R.string.kulonleges_lakotteruletkezdete),
         TrafficSign(id = "kulonleges_lakotteruletkezdete1", category = SignCategory.Information, imageRes = R.drawable.kulonleges_lakotteruletkezdete1, titleRes = R.string.kulonleges_lakotteruletkezdete1),
         TrafficSign(id = "kulonleges_lakotteruletkezdete2", category = SignCategory.Information, imageRes = R.drawable.kulonleges_lakotteruletkezdete2, titleRes = R.string.kulonleges_lakotteruletkezdete2),
         TrafficSign(id = "kulonleges_lakotteruletvege", category = SignCategory.Information, imageRes = R.drawable.kulonleges_lakotteruletvege, titleRes = R.string.kulonleges_lakotteruletvege),
         TrafficSign(id = "kulonleges_lakotteruletvege1", category = SignCategory.Information, imageRes = R.drawable.kulonleges_lakotteruletvege1, titleRes = R.string.kulonleges_lakotteruletvege1),
         TrafficSign(id = "kulonleges_lakotteruletvege2", category = SignCategory.Information, imageRes = R.drawable.kulonleges_lakotteruletvege2, titleRes = R.string.kulonleges_lakotteruletvege2),
+        TrafficSign(id = "tajekoztato_altalanossebesseghatarok", category = SignCategory.Information, imageRes = R.drawable.tajekoztato_altalanossebesseghatarok, titleRes = R.string.tajekoztato_altalanossebesseghatarok),
         TrafficSign(id = "kulonleges_parkoljesutazz", category = SignCategory.Information, imageRes = R.drawable.kulonleges_parkoljesutazz, titleRes = R.string.kulonleges_parkoljesutazz),
         TrafficSign(id = "kulonleges_parkoljesutazzautobusszal", category = SignCategory.Information, imageRes = R.drawable.kulonleges_parkoljesutazzautobusszal, titleRes = R.string.kulonleges_parkoljesutazzautobusszal),
         TrafficSign(id = "kulonleges_parkoljesutazzmetroval", category = SignCategory.Information, imageRes = R.drawable.kulonleges_parkoljesutazzmetroval, titleRes = R.string.kulonleges_parkoljesutazzmetroval),
@@ -371,6 +393,7 @@ object SignCatalog {
 
     fun categoryIconRes(category: SignCategory): Int {
         return when (category) {
+            SignCategory.Police -> R.drawable.kategoria_rendori
             SignCategory.RouteType -> R.drawable.kategoria_utvonaltipus
             SignCategory.Priority -> R.drawable.kategoria_elsobseg
             SignCategory.Mandatory -> R.drawable.kategoria_utasitastado
@@ -385,6 +408,7 @@ object SignCatalog {
 
     fun categoryTitleRes(category: SignCategory): Int {
         return when (category) {
+            SignCategory.Police -> R.string.kategoria_rendori
             SignCategory.RouteType -> R.string.kategoria_utvonaltipus
             SignCategory.Priority -> R.string.kategoria_elsobsegetszabalyozo
             SignCategory.Mandatory -> R.string.kategoria_utasitastado
