@@ -1,0 +1,22 @@
+Release name (Play, not shown to users):
+2.0.0 (2)
+
+What's new — max 500 characters per language.
+
+<en-US>
+New rewrite of Hungarian Traffic Signals.
+
+• Nine KRESZ categories with search
+• Full-size sign and description
+• English by default; Hungarian if the phone language is Hungarian
+• Sharper sign diagrams from official-style tables
+</en-US>
+
+<hu-HU>
+Újraírt Magyar Közlekedési Jelzések.
+
+• Kilenc KRESZ-kategória kereséssel
+• Nagyított tábla és leírás
+• Angol alapból; magyar, ha a telefon nyelve magyar
+• Élesebb táblaábrák a hivatalos jellegű táblagyűjteményekből
+</hu-HU>

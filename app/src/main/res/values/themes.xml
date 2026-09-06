@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ts_red">#C8102E</color>
+    <color name="ts_asphalt">#1B1F24</color>
+    <color name="ts_paper">#F3F0E8</color>
+    <style name="Theme.TrafficSignals" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/ts_asphalt</item>
+        <item name="android:navigationBarColor">@color/ts_paper</item>
+        <item name="android:windowBackground">@color/ts_paper</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.TrafficSignals.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/ts_asphalt</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/ts_asphalt</item>
+        <item name="postSplashScreenTheme">@style/Theme.TrafficSignals</item>
+    </style>
+</resources>
