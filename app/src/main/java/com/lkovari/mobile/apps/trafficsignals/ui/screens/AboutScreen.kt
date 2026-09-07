@@ -3,18 +3,16 @@ package com.lkovari.mobile.apps.trafficsignals.ui.screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.outlined.Copyright
@@ -35,11 +33,16 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.lkovari.mobile.apps.trafficsignals.R
 import com.lkovari.mobile.apps.trafficsignals.data.AppLanguage
 import com.lkovari.mobile.apps.trafficsignals.ui.LanguageSwitcher
+
+internal fun aboutLogoSizeDp(availableHeightDp: Float): Float {
+    return (availableHeightDp * 0.16f).coerceIn(64f, 112f)
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -51,6 +54,12 @@ fun AboutScreen(
     val uriHandler = LocalUriHandler.current
     val sourceUrl = stringResource(R.string.about_source_url)
     val privacyUrl = stringResource(R.string.about_privacy_url)
+    val kreszUrl = stringResource(R.string.about_kresz_url)
+    val bodyAutoSize = TextAutoSize.StepBased(
+        minFontSize = 10.sp,
+        maxFontSize = 13.sp,
+        stepSize = 0.25.sp
+    )
     Scaffold(
         contentWindowInsets = WindowInsets.safeDrawing,
         topBar = {
@@ -70,101 +79,134 @@ fun AboutScreen(
             )
         }
     ) { inner ->
-        Column(
+        BoxWithConstraints(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(inner)
-                .verticalScroll(rememberScrollState())
-                .padding(horizontal = 16.dp, vertical = 8.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(6.dp)
+                .padding(horizontal = 12.dp, vertical = 4.dp)
         ) {
-            Image(
-                painter = painterResource(R.drawable.ic_launcher_foreground),
-                contentDescription = null,
-                modifier = Modifier
-                    .size(192.dp)
-                    .clipToBounds()
-                    .scale(1.9f)
-            )
-            Text(
-                text = stringResource(R.string.about_appname),
-                style = MaterialTheme.typography.titleMedium,
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = stringResource(R.string.about_description),
-                style = MaterialTheme.typography.bodySmall.copy(lineHeight = 16.sp),
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = stringResource(R.string.about_author),
-                style = MaterialTheme.typography.bodySmall
-            )
-            Text(
-                text = stringResource(R.string.about_artwork),
-                style = MaterialTheme.typography.bodySmall.copy(lineHeight = 16.sp),
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                textAlign = TextAlign.Center
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            val kreszUrl = stringResource(R.string.about_kresz_url)
-            Text(
-                text = stringResource(R.string.about_kresz_label),
-                style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.primary,
-                textAlign = TextAlign.Center,
-                modifier = Modifier.clickable { uriHandler.openUri(kreszUrl) }
-            )
-            Text(
-                text = kreszUrl,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.primary,
-                textDecoration = TextDecoration.Underline,
-                textAlign = TextAlign.Center,
-                modifier = Modifier.clickable { uriHandler.openUri(kreszUrl) }
-            )
-            Text(
-                text = stringResource(R.string.about_watermark),
-                style = MaterialTheme.typography.bodySmall.copy(lineHeight = 16.sp),
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                textAlign = TextAlign.Center
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                text = stringResource(R.string.about_source_label),
-                style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.primary,
-                textDecoration = TextDecoration.Underline,
-                modifier = Modifier.clickable { uriHandler.openUri(sourceUrl) }
-            )
-            Text(
-                text = stringResource(R.string.about_privacy_policy),
-                style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.primary,
-                textDecoration = TextDecoration.Underline,
-                modifier = Modifier.clickable { uriHandler.openUri(privacyUrl) }
-            )
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.Center,
-                verticalAlignment = Alignment.CenterVertically
+            val logoSize = aboutLogoSizeDp(maxHeight.value).dp
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(3.dp)
             ) {
-                Text(
-                    text = stringResource(R.string.about_copyright_prefix),
-                    style = MaterialTheme.typography.bodySmall
-                )
-                Icon(
-                    imageVector = Icons.Outlined.Copyright,
+                Image(
+                    painter = painterResource(R.drawable.ic_launcher_foreground),
                     contentDescription = null,
                     modifier = Modifier
-                        .padding(horizontal = 4.dp)
-                        .size(14.dp)
+                        .size(logoSize)
+                        .clipToBounds()
+                        .scale(1.85f)
                 )
                 Text(
-                    text = stringResource(R.string.about_copyright_holder),
-                    style = MaterialTheme.typography.bodySmall
+                    text = stringResource(R.string.about_appname),
+                    style = MaterialTheme.typography.titleSmall,
+                    textAlign = TextAlign.Center,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
+                Text(
+                    text = stringResource(R.string.about_description),
+                    modifier = Modifier
+                        .weight(1f, fill = false)
+                        .fillMaxWidth(),
+                    style = MaterialTheme.typography.bodySmall.copy(lineHeight = 14.sp),
+                    textAlign = TextAlign.Center,
+                    overflow = TextOverflow.Ellipsis,
+                    autoSize = bodyAutoSize
+                )
+                Text(
+                    text = stringResource(R.string.about_author),
+                    style = MaterialTheme.typography.bodySmall,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Text(
+                    text = stringResource(R.string.about_artwork),
+                    modifier = Modifier
+                        .weight(1f, fill = false)
+                        .fillMaxWidth(),
+                    style = MaterialTheme.typography.bodySmall.copy(lineHeight = 14.sp),
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    textAlign = TextAlign.Center,
+                    overflow = TextOverflow.Ellipsis,
+                    autoSize = bodyAutoSize
+                )
+                Text(
+                    text = stringResource(R.string.about_kresz_label),
+                    style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.primary,
+                    textAlign = TextAlign.Center,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.clickable { uriHandler.openUri(kreszUrl) }
+                )
+                Text(
+                    text = kreszUrl,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.primary,
+                    textDecoration = TextDecoration.Underline,
+                    textAlign = TextAlign.Center,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable { uriHandler.openUri(kreszUrl) }
+                )
+                Text(
+                    text = stringResource(R.string.about_watermark),
+                    modifier = Modifier
+                        .weight(0.8f, fill = false)
+                        .fillMaxWidth(),
+                    style = MaterialTheme.typography.bodySmall.copy(lineHeight = 14.sp),
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    textAlign = TextAlign.Center,
+                    overflow = TextOverflow.Ellipsis,
+                    autoSize = bodyAutoSize
+                )
+                Text(
+                    text = stringResource(R.string.about_source_label),
+                    style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.primary,
+                    textDecoration = TextDecoration.Underline,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.clickable { uriHandler.openUri(sourceUrl) }
+                )
+                Text(
+                    text = stringResource(R.string.about_privacy_policy),
+                    style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.primary,
+                    textDecoration = TextDecoration.Underline,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.clickable { uriHandler.openUri(privacyUrl) }
+                )
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.Center,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = stringResource(R.string.about_copyright_prefix),
+                        style = MaterialTheme.typography.bodySmall,
+                        maxLines = 1
+                    )
+                    Icon(
+                        imageVector = Icons.Outlined.Copyright,
+                        contentDescription = null,
+                        modifier = Modifier
+                            .padding(horizontal = 4.dp)
+                            .size(14.dp)
+                    )
+                    Text(
+                        text = stringResource(R.string.about_copyright_holder),
+                        style = MaterialTheme.typography.bodySmall,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
             }
         }
     }

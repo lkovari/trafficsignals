@@ -11,6 +11,7 @@ Versioning matches `versionName` **2.0.0** / `versionCode` **2** (minSdk 24, tar
 
 - Home category grid stays inside the system safe area on all phones (status bar, gesture/nav bar); tiles shrink to fit four rows instead of clipping.
 - Lane-layout information signs (E-003, E-014, E-007) use the same SignBlue as the rest of the catalog.
+- About fits one screen inside the system safe area: logo scales with height, long copy auto-sizes, and Original source stays visible without scrolling.
 
 ### Added
 
