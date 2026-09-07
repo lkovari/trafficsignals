@@ -49,6 +49,14 @@ class SignCatalogTest {
             assertTrue(key, english.contains(key))
             assertTrue(key, hungarian.contains(key))
         }
+        SignCatalog.signs.forEach { sign ->
+            val nameRes = sign.nameRes
+            if (nameRes != null) {
+                val key = "${sign.id}_name"
+                assertTrue(key, english.contains(key))
+                assertTrue(key, hungarian.contains(key))
+            }
+        }
     }
 
     @Test

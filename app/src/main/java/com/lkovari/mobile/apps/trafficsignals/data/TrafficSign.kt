@@ -17,5 +17,6 @@ data class TrafficSign(
     val id: String,
     val category: SignCategory,
     val imageRes: Int,
-    val titleRes: Int
+    val titleRes: Int,
+    val nameRes: Int? = null
 )

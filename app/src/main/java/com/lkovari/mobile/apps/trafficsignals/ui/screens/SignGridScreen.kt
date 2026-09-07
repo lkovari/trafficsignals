@@ -58,7 +58,9 @@ fun SignGridScreen(
     } else {
         val needle = query.trim().lowercase()
         signs.filter { sign ->
-            context.getString(sign.titleRes).lowercase().contains(needle)
+            val name = sign.nameRes
+            context.getString(sign.titleRes).lowercase().contains(needle) ||
+                (name != null && context.getString(name).lowercase().contains(needle))
         }
     }
     Scaffold(
@@ -126,7 +128,7 @@ private fun SignTile(
     ) {
         Image(
             painter = painterResource(sign.imageRes),
-            contentDescription = stringResource(sign.titleRes),
+            contentDescription = stringResource(sign.nameRes ?: sign.titleRes),
             modifier = Modifier
                 .fillMaxWidth()
                 .aspectRatio(1f)
@@ -134,7 +136,7 @@ private fun SignTile(
             contentScale = ContentScale.Fit
         )
         Text(
-            text = stringResource(sign.titleRes),
+            text = stringResource(sign.nameRes ?: sign.titleRes),
             modifier = Modifier.padding(start = 8.dp, end = 8.dp, bottom = 8.dp),
             style = MaterialTheme.typography.bodyMedium,
             maxLines = 2,

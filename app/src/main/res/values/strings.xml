@@ -19,7 +19,7 @@
     <string name="about_source_label">Original source</string>
     <string name="about_source_url" translatable="false">https://bitbucket.org/laszlokovary/trafficsignals-e/src/master/</string>
     <string name="about_copyright_prefix">Copyright</string>
-    <string name="about_copyright_holder">2016 - 2026 by László Kővári</string>
+    <string name="about_copyright_holder">2011 - 2026 by László Kővári</string>
     <string name="about_privacy_policy">Privacy policy</string>
     <string name="about_privacy_url" translatable="false">https://lkovari.github.io/KLHome/assets/bigfiles/trafficsignals-privacy-policy.html</string>
     <string name="kategoria_utvonaltipus">Type of route signs</string>
@@ -34,16 +34,26 @@
     <string name="kategoria_rendori">Police signals</string>
     <string name="category_sign_count">%d signs</string>
 
-    <string name="rendori_karokoldalra">Officer with both arms outstretched. Traffic parallel to the arms may go; traffic facing the chest or back must stop. Officer signals override signs and lights.</string>
-    <string name="rendori_karfuggoleges">One arm raised vertically. Change of direction: stop if you can, leave the junction if you are already in it. Pedestrians must not step onto the carriageway.</string>
-    <string name="rendori_balramogott">Traffic from the officer\'s right may go ahead, right, or turn left behind the officer. All other directions must stop.</string>
-    <string name="rendori_balraelott">Traffic from the officer\'s left may go ahead, right, or turn left in front of the officer. All other directions must stop.</string>
-    <string name="rendori_alapallas">Rest stance, arms at the sides. Same meaning as arms outstretched: go from the sides, stop from the front or back.</string>
-    <string name="rendori_gyorsitas">Arm beckoning toward the body. Speed up. Applies only to traffic already allowed to proceed.</string>
-    <string name="rendori_lassitas">Arm moving up and down. Slow down. Applies only to traffic already allowed to proceed.</string>
-    <string name="rendori_megallitotarcsa">Stop for a white-rimmed red disc or a raised arm. The same stop signal may be given by a public-space warden and by other entitled persons (military traffic regulator, disaster management, customs, fire, transport authority inspector). Officer signals override signs and lights.</string>
-    <string name="rendori_megallitasjarmubol">Stop when a moving police vehicle signals with lights, a disc or lamp moved up and down, a loudspeaker, or a STOP inscription. Follow the instruction. Officer signals override signs and lights.</string>
-    <string name="rendori_jelzoor">Stop for a flagman or civil-guard flagman showing a red disc or a red lamp. Advance warning is the railway/roadworks warning sign with the signalman plate.</string>
+    <string name="rendori_karokoldalra_name">Both arms out</string>
+    <string name="rendori_karfuggoleges_name">One arm up</string>
+    <string name="rendori_balramogott_name">Left turn behind the officer</string>
+    <string name="rendori_balraelott_name">Left turn in front of the officer</string>
+    <string name="rendori_alapallas_name">Rest stance</string>
+    <string name="rendori_gyorsitas_name">Speed up</string>
+    <string name="rendori_lassitas_name">Slow down</string>
+    <string name="rendori_megallitotarcsa_name">Stop disc</string>
+    <string name="rendori_megallitasjarmubol_name">Stop from a police vehicle</string>
+    <string name="rendori_jelzoor_name">Flagman</string>
+    <string name="rendori_karokoldalra">If you come from the side (green arrows), you may go. If you face the chest or back (red stop marks), you must halt. Officer signals override signs and lights.</string>
+    <string name="rendori_karfuggoleges">Like an amber light: stop if you can; leave the junction if you are already in it. Pedestrians must not step onto the carriageway.</string>
+    <string name="rendori_balramogott">Traffic from the officer\'s right (green arrows) may go ahead, turn right, or turn left behind the officer on the curved path. Every other approach must stop.</string>
+    <string name="rendori_balraelott">Traffic from the officer\'s left (green arrows) may go ahead, turn right, or turn left in front of the officer on the curved path. Every other approach must stop.</string>
+    <string name="rendori_alapallas">Arms hang at the sides — same rule as both arms out. Sides (green arrows): go. Chest or back (red stop marks): halt.</string>
+    <string name="rendori_gyorsitas">The officer beckons toward the body (yellow arrows pointing in). Speed up only if you are already allowed to go.</string>
+    <string name="rendori_lassitas">The officer pumps an arm up and down (yellow arrows). Slow down only if you are already allowed to go.</string>
+    <string name="rendori_megallitotarcsa">Stop for the white-rimmed red disc or a raised arm. A public-space warden and other entitled persons (military traffic regulator, disaster management, customs, fire, transport authority inspector) may give the same signal. Officer signals override signs and lights.</string>
+    <string name="rendori_megallitasjarmubol">Stop when a moving police vehicle signals with lights, a disc or lamp waved up and down, a loudspeaker, or a STOP marking. Follow the instruction. Officer signals override signs and lights.</string>
+    <string name="rendori_jelzoor">Stop for a flagman or civil-guard flagman showing a red disc or a red lamp, often on a stand. Advance warning is the railway or roadworks warning sign with the signalman plate.</string>
 
     <string name="utvonaltipus_autopalyakezdete">Start of motorway regulations</string>
     <string name="utvonaltipus_autopalyavege">End of motorway regulations</string>

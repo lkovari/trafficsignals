@@ -18,7 +18,7 @@
     <string name="about_artwork">A csereábrák a magyar KRESZ táblagyűjtemények és a Wikimedia Commons SVG közúti jelzésábrái alapján készültek. A rendőri jelzések, a sávjelző fények és egyes útburkolati jelek eredeti oktatási ábrák. Ahol nem volt megfelelő ábra, az eredeti raszteres kép maradt.</string>
     <string name="about_source_label">Eredeti forrás</string>
     <string name="about_copyright_prefix">Copyright</string>
-    <string name="about_copyright_holder">2016 - 2026 Kővári László</string>
+    <string name="about_copyright_holder">2011 - 2026 Kővári László</string>
     <string name="about_privacy_policy">Adatvédelmi tájékoztató</string>
     <string name="kategoria_utvonaltipus">Útvonaltípust jelző táblák</string>
     <string name="kategoria_elsobsegetszabalyozo">Elsőbbséget szabályozó táblák</string>
@@ -32,16 +32,26 @@
     <string name="kategoria_rendori">Rendőri jelzések</string>
     <string name="category_sign_count">%d tábla</string>
 
-    <string name="rendori_karokoldalra">Mindkét kar oldalra kinyújtva. A karral párhuzamos irányból szabad az út; mellkas vagy hát felől meg kell állni. A rendőr jelzése a táblákat és a lámpát is felülírja.</string>
-    <string name="rendori_karfuggoleges">Egyik kar függőlegesen a magasba. Irányváltás: aki eddig mehetett, álljon meg, ha tud; aki a kereszteződésben van, hagyja el. Gyalogos az úttestre nem léphet.</string>
-    <string name="rendori_balramogott">A jobbról érkezők mehetnek egyenesen, jobbra, és a rendőr mögött balra. Minden más irány tilos.</string>
-    <string name="rendori_balraelott">A balról érkezők mehetnek egyenesen, jobbra, és a rendőr előtt balra. Minden más irány tilos.</string>
-    <string name="rendori_alapallas">Alapállás, karok a test mellett. Ugyanaz, mint a kinyújtott kar: oldalnézetből szabad, mellkas vagy hát felől tilos.</string>
-    <string name="rendori_gyorsitas">Kinyújtott kar maga felé int: gyorsítás. Csak a szabad jelzés szerint közlekedőkre vonatkozik.</string>
-    <string name="rendori_lassitas">A kar fel-le mozog: lassítás. Csak a szabad jelzés szerint közlekedőkre vonatkozik.</string>
-    <string name="rendori_megallitotarcsa">Meg kell állni a fehér szegélyű piros tárcsára vagy a feltartott karra. Ugyanezt adhatja a közterület-felügyelő, valamint más jogosult (katonai forgalomszabályozó, katasztrófavédelem, vám, tűzoltó, közlekedési hatóság ellenőre). A jelzés a táblákat és a lámpát is felülírja.</string>
-    <string name="rendori_megallitasjarmubol">Meg kell állni, ha mozgó rendőrjármű megkülönböztető jelzéssel, fel-le mozgatott tárcsával vagy lámpával, hangszóróval vagy ÁLLJ/STOP felirattal utasít. A jelzés a táblákat és a lámpát is felülírja.</string>
-    <string name="rendori_jelzoor">A jelzőőr vagy polgárőr piros tárcsájára vagy piros lámpájára meg kell állni. Előjelzése a veszélyt jelző tábla és a jelzőőr kiegészítő tábla.</string>
+    <string name="rendori_karokoldalra_name">Karok oldalra</string>
+    <string name="rendori_karfuggoleges_name">Kar a magasba</string>
+    <string name="rendori_balramogott_name">Balra a rendőr mögött</string>
+    <string name="rendori_balraelott_name">Balra a rendőr előtt</string>
+    <string name="rendori_alapallas_name">Alapállás</string>
+    <string name="rendori_gyorsitas_name">Gyorsítás</string>
+    <string name="rendori_lassitas_name">Lassítás</string>
+    <string name="rendori_megallitotarcsa_name">Megállító tárcsa</string>
+    <string name="rendori_megallitasjarmubol_name">Megállítás járműből</string>
+    <string name="rendori_jelzoor_name">Jelzőőr</string>
+    <string name="rendori_karokoldalra">Ha oldalról jön (zöld nyilak), mehet. Ha a mellkas vagy a hát felé néz (piros megállójel), meg kell állni. A rendőr jelzése a táblákat és a lámpát is felülírja.</string>
+    <string name="rendori_karfuggoleges">Mint a sárga lámpa: álljon meg, ha tud; ha már a kereszteződésben van, hagyja el. Gyalogos az úttestre nem léphet.</string>
+    <string name="rendori_balramogott">A rendőr jobb oldaláról (zöld nyilak) szabad egyenesen, jobbra, és a görbe nyíllal a rendőr mögött balra. Minden más irányon meg kell állni.</string>
+    <string name="rendori_balraelott">A rendőr bal oldaláról (zöld nyilak) szabad egyenesen, jobbra, és a görbe nyíllal a rendőr előtt balra. Minden más irányon meg kell állni.</string>
+    <string name="rendori_alapallas">A karok a test mellett lógnak — ugyanaz a szabály, mint kinyújtott karral. Oldalról (zöld nyilak): szabad. Mellkas vagy hát felől (piros megállójel): tilos.</string>
+    <string name="rendori_gyorsitas">A rendőr maga felé int (befelé mutató sárga nyilak). Csak akkor gyorsítson, ha egyébként is szabad a továbbhaladás.</string>
+    <string name="rendori_lassitas">A rendőr fel-le mozgatja a karját (sárga nyilak). Csak akkor lassítson, ha egyébként is szabad a továbbhaladás.</string>
+    <string name="rendori_megallitotarcsa">Álljon meg a fehér szegélyű piros tárcsára vagy a feltartott karra. Ugyanezt adhatja a közterület-felügyelő, valamint más jogosult (katonai forgalomszabályozó, katasztrófavédelem, vám, tűzoltó, közlekedési hatóság ellenőre). A jelzés a táblákat és a lámpát is felülírja.</string>
+    <string name="rendori_megallitasjarmubol">Álljon meg, ha mozgó rendőrjármű megkülönböztető jelzéssel, fel-le mozgatott tárcsával vagy lámpával, hangszóróval vagy ÁLLJ/STOP felirattal utasít. A jelzés a táblákat és a lámpát is felülírja.</string>
+    <string name="rendori_jelzoor">A jelzőőr vagy polgárőr piros tárcsájára vagy piros lámpájára meg kell állni; a tárcsa állványon is lehet. Előjelzése a veszélyt jelző tábla és a jelzőőr kiegészítő tábla.</string>
 
     <string name="utvonaltipus_autopalyakezdete">Autópálya kezdete</string>
     <string name="utvonaltipus_autopalyavege">Autópálya vége</string>

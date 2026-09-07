@@ -70,13 +70,22 @@ fun SignDetailScreen(
         ) {
             Image(
                 painter = painterResource(sign.imageRes),
-                contentDescription = stringResource(sign.titleRes),
+                contentDescription = stringResource(sign.nameRes ?: sign.titleRes),
                 modifier = Modifier
                     .fillMaxWidth()
                     .aspectRatio(1f),
                 contentScale = ContentScale.Fit
             )
             Spacer(modifier = Modifier.height(20.dp))
+            val nameRes = sign.nameRes
+            if (nameRes != null) {
+                Text(
+                    text = stringResource(nameRes),
+                    style = MaterialTheme.typography.titleLarge,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+            }
             Text(
                 text = stringResource(sign.titleRes),
                 style = MaterialTheme.typography.bodyLarge,

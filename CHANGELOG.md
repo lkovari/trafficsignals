@@ -20,6 +20,10 @@ Versioning matches `versionName` **2.0.0** / `versionCode` **2** (minSdk 24, tar
 - Right-side railway mirrors A-043/A-044/A-046/A-048/A-050; representative additional plates H-063, H-065, H-083, H-084, H-099; tourist I-001, I-004, I-025, I-031, I-032, I-034, I-037, I-040, I-044.
 - Distinct facility and pairing signs F-030, F-031, G-004, G-312, G-313, H-025.
 
+### Changed
+
+- Police-signal drawings show cars, stop marks and turn paths; grid tiles use short names and the detail screen leads with the name then the rule.
+
 ## [2.0.0] — 2026-09-06
 
 Kotlin + Jetpack Compose rewrite of the 2011 Eclipse app (`trafficsignals-e`). Privacy policy: https://lkovari.github.io/KLHome/assets/bigfiles/trafficsignals-privacy-policy.html. Play what’s-new: [docs/play-console/whatsnew.txt](docs/play-console/whatsnew.txt).
@@ -42,7 +46,7 @@ Kotlin + Jetpack Compose rewrite of the 2011 Eclipse app (`trafficsignals-e`). P
 - Default language fallback is English (the Eclipse app fell back to Hungarian).
 - License (Acknowledge) and About fit one phone screen: compact spacing, auto-sized license text, Accept/Refuse always visible.
 - About source and privacy policy are tappable labels (full URLs are not shown).
-- Copyright line: 2016 – 2026 László Kővári.
+- Copyright line: 2011 – 2026 László Kővári.
 
 ### Fixed
 
