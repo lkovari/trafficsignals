@@ -1,5 +1,6 @@
 package com.lkovari.mobile.apps.trafficsignals
 
+import com.lkovari.mobile.apps.trafficsignals.data.KreszCitation
 import com.lkovari.mobile.apps.trafficsignals.data.LicensePreferences
 import com.lkovari.mobile.apps.trafficsignals.data.SignCatalog
 import com.lkovari.mobile.apps.trafficsignals.data.SignCategory
@@ -57,6 +58,37 @@ class SignCatalogTest {
                 assertTrue(key, hungarian.contains(key))
             }
         }
+        listOf("kresz_paragraph", "about_kresz_label").forEach { key ->
+            assertTrue(key, english.contains(key))
+            assertTrue(key, hungarian.contains(key))
+        }
+    }
+
+    @Test
+    fun everySignHasKreszParagraph() {
+        SignCatalog.signs.forEach { sign ->
+            val citation = sign.kreszParagraph
+            assertTrue(sign.id, citation.contains("§"))
+            assertEquals(citation, KreszCitation.forId(sign.id))
+        }
+    }
+
+    @Test
+    fun kreszParagraphsMatchStatute() {
+        assertEquals("6. § (1) a)", SignCatalog.signById("rendori_karokoldalra")?.kreszParagraph)
+        assertEquals("7. § (1)", SignCatalog.signById("rendori_jelzoor")?.kreszParagraph)
+        assertEquals("8. § (2) a)", SignCatalog.signById("fenyjelzo_gyalogos_zold")?.kreszParagraph)
+        assertEquals("9. § (4) d)", SignCatalog.signById("fenyjelzo_piros")?.kreszParagraph)
+        assertEquals("11. § (1) a)", SignCatalog.signById("utvonaltipus_autopalyakezdete")?.kreszParagraph)
+        assertEquals("12. § (1) b)", SignCatalog.signById("elsobseg_alljelsobsegadaskotelezo")?.kreszParagraph)
+        assertEquals("13. § (1) c)", SignCatalog.signById("utasitastado_korforgalom")?.kreszParagraph)
+        assertEquals("14. § (1) z)", SignCatalog.signById("tilalmi_behajtanitilos")?.kreszParagraph)
+        assertEquals("15. § (1) a)", SignCatalog.signById("tilalmi_megallnitilos")?.kreszParagraph)
+        assertEquals("16. § (1) p)", SignCatalog.signById("veszely_gyalogosatkeles")?.kreszParagraph)
+        assertEquals("17. § (1) a)", SignCatalog.signById("kulonleges_gyalogosatkelohely")?.kreszParagraph)
+        assertEquals("18. § (1) c)", SignCatalog.signById("utburkolat_zarovonal")?.kreszParagraph)
+        assertEquals("19. § (6) a)", SignCatalog.signById("veszely_fenysorompo_tilos")?.kreszParagraph)
+        assertEquals("10. § (2)", SignCatalog.signById("kiegeszito_idoszak")?.kreszParagraph)
     }
 
     @Test

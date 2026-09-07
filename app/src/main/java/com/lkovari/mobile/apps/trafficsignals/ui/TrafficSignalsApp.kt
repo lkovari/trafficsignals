@@ -15,6 +15,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.lkovari.mobile.apps.trafficsignals.data.AppLanguage
+import com.lkovari.mobile.apps.trafficsignals.data.LanguagePreferences
 import com.lkovari.mobile.apps.trafficsignals.data.LicensePreferences
 import com.lkovari.mobile.apps.trafficsignals.data.SignCatalog
 import com.lkovari.mobile.apps.trafficsignals.data.SignCategory
@@ -24,8 +26,10 @@ import com.lkovari.mobile.apps.trafficsignals.ui.screens.LicenseScreen
 import com.lkovari.mobile.apps.trafficsignals.ui.screens.SignDetailScreen
 import com.lkovari.mobile.apps.trafficsignals.ui.screens.SignGridScreen
 import com.lkovari.mobile.apps.trafficsignals.ui.theme.TrafficSignalsTheme
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
@@ -46,32 +50,68 @@ class LicenseViewModel(application: Application) : AndroidViewModel(application)
     }
 }
 
+class LanguageViewModel(application: Application) : AndroidViewModel(application) {
+    private val preferences = LanguagePreferences(application)
+    private val deviceLanguageTag = application.resources.configuration.locales[0].toLanguageTag()
+    private val override = MutableStateFlow<AppLanguage?>(null)
+
+    val language: StateFlow<AppLanguage> = combine(
+        preferences.languageTag,
+        override
+    ) { stored, immediate ->
+        immediate ?: AppLanguage.resolve(stored, deviceLanguageTag)
+    }.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5_000),
+        initialValue = AppLanguage.fromDevice(deviceLanguageTag)
+    )
+
+    fun setLanguage(language: AppLanguage) {
+        override.value = language
+        viewModelScope.launch {
+            preferences.setLanguage(language)
+        }
+    }
+}
+
 @Composable
 fun TrafficSignalsApp(
     onRefuseLicense: () -> Unit,
-    licenseViewModel: LicenseViewModel = viewModel()
+    licenseViewModel: LicenseViewModel = viewModel(),
+    languageViewModel: LanguageViewModel = viewModel()
 ) {
     val accepted by licenseViewModel.accepted.collectAsStateWithLifecycle()
+    val language by languageViewModel.language.collectAsStateWithLifecycle()
     TrafficSignalsTheme {
-        Surface(modifier = Modifier.fillMaxSize()) {
-            when (accepted) {
-                null -> { }
-                false -> LicenseScreen(
-                    onAccept = { licenseViewModel.accept() },
-                    onRefuse = onRefuseLicense
-                )
-                true -> TrafficSignalsNav()
+        ProvideAppLocale(language) {
+            Surface(modifier = Modifier.fillMaxSize()) {
+                when (accepted) {
+                    null -> { }
+                    false -> LicenseScreen(
+                        onAccept = { licenseViewModel.accept() },
+                        onRefuse = onRefuseLicense
+                    )
+                    true -> TrafficSignalsNav(
+                        language = language,
+                        onLanguage = languageViewModel::setLanguage
+                    )
+                }
             }
         }
     }
 }
 
 @Composable
-private fun TrafficSignalsNav() {
+private fun TrafficSignalsNav(
+    language: AppLanguage,
+    onLanguage: (AppLanguage) -> Unit
+) {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = "categories") {
         composable("categories") {
             CategoryListScreen(
+                language = language,
+                onLanguage = onLanguage,
                 onCategory = { category ->
                     navController.navigate("category/${category.name}")
                 },
@@ -114,7 +154,11 @@ private fun TrafficSignalsNav() {
             )
         }
         composable("about") {
-            AboutScreen(onBack = { navController.popBackStack() })
+            AboutScreen(
+                language = language,
+                onLanguage = onLanguage,
+                onBack = { navController.popBackStack() }
+            )
         }
     }
 }

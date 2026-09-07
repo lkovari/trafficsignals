@@ -60,7 +60,9 @@ fun SignGridScreen(
         signs.filter { sign ->
             val name = sign.nameRes
             context.getString(sign.titleRes).lowercase().contains(needle) ||
-                (name != null && context.getString(name).lowercase().contains(needle))
+                (name != null && context.getString(name).lowercase().contains(needle)) ||
+                sign.kreszParagraph.lowercase().contains(needle) ||
+                context.getString(R.string.kresz_paragraph, sign.kreszParagraph).lowercase().contains(needle)
         }
     }
     Scaffold(

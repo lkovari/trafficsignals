@@ -7,16 +7,22 @@
     <string name="license">You acknowledge and agree that DEVELOPER owns all legal right, title and interest in and to the Software, including any intellectual property rights which subsist in the Software (whether those rights happen to be registered or not, and wherever in the world those rights may exist). You further acknowledge that the Software may contain information which is designated confidential by developer and that you shall not disclose such information without DEVELOPER\'s prior written consent. YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE SOFTWARE IS AT YOUR SOLE RISK AND THAT THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE." Copyright (C) 2011-2026 by László Kővári - DEVELOPER</string>
     <string name="menuTitle">Traffic signs and signals</string>
     <string name="menu_info">About</string>
+    <string name="language_hungarian">Hungarian</string>
+    <string name="language_english">English</string>
     <string name="search_signs">Search signs</string>
     <string name="search_no_results">No signs match this search.</string>
     <string name="sign_detail_title">Sign</string>
     <string name="previous_sign">Previous</string>
     <string name="next_sign">Next</string>
     <string name="about_appname">Hungarian Traffic Signals</string>
-    <string name="about_description">Browse Hungarian KRESZ traffic signs by category. Open a category to see every sign in that group, then tap a sign for a full-size image and description. Descriptions follow the device language: Hungarian when the locale is Hungarian, English otherwise.</string>
+    <string name="about_description">Browse Hungarian KRESZ traffic signs by category. Open a category to see every sign in that group, then tap a sign for a full-size image and description. Use the flags to switch Hungarian and English (from a GB traffic-sign book).</string>
     <string name="about_author">Author: László Kőváry</string>
-    <string name="about_artwork">Replacement sign diagrams are based on Hungarian KRESZ tables and Wikimedia Commons SVG road-sign diagrams. Police-signal, lane-use light and some road-marking drawings are original educational diagrams. Original raster artwork is kept where no matching diagram was available.</string>
+    <string name="about_artwork">All images and illustrations, signs and diagrams based on Hungarian KRESZ tables and Wikimedia Commons SVG road-sign diagrams. Police-signal, lane-use light and some road-marking drawings are original educational diagrams. Original raster artwork is kept where no matching diagram was available.</string>
+    <string name="about_kresz_label">Official KRESZ regulation</string>
+    <string name="about_kresz_url" translatable="false">https://net.jogtar.hu/jogszabaly?docid=97500001.KPM</string>
+    <string name="about_watermark">(A watermark may appear at random on some images: (c) KL ☺ — that is my former personal watermark, L for László, K for Kővári)</string>
     <string name="about_source_label">Original source</string>
+    <string name="kresz_paragraph">KRESZ %s</string>
     <string name="about_source_url" translatable="false">https://bitbucket.org/laszlokovary/trafficsignals-e/src/master/</string>
     <string name="about_copyright_prefix">Copyright</string>
     <string name="about_copyright_holder">2011 - 2026 by László Kővári</string>

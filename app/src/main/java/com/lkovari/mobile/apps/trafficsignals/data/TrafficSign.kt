@@ -19,4 +19,7 @@ data class TrafficSign(
     val imageRes: Int,
     val titleRes: Int,
     val nameRes: Int? = null
-)
+) {
+    val kreszParagraph: String
+        get() = KreszCitation.forId(id)
+}

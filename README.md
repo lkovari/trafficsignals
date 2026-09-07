@@ -43,7 +43,7 @@ Replacement SVGs are attributed to Wikimedia Commons on the About screen.
 
 These scripts are a **developer-only** artwork pipeline. They are not compiled into the app, not copied into `assets`, and **do not ship in the release APK or Play bundle**. The phone runs only the PNG/XML already under `app/src/main/res/`. `assembleDebug` / `assembleRelease` do not run Python.
 
-**What they were for:** one-time (and repeatable) migration from the 2011 Eclipse catalog (`trafficsignals-e`): copy sign ids and strings into Compose, import the original rasters, then replace as many diagrams as possible with Wikimedia KRESZ SVGs and a shared palette. Low-resolution JPEGs and `(c) LK` watermarks were cleaned or redrawn in the same pass.
+**What they were for:** one-time (and repeatable) migration from the 2011 Eclipse catalog (`trafficsignals-e`): copy sign ids and strings into Compose, import the original rasters, then replace as many diagrams as possible with Wikimedia KRESZ SVGs and a shared palette. Low-resolution JPEGs and `(c) KL ☺` watermarks were cleaned or redrawn in the same pass.
 
 **What they are for now:** regenerate or fix catalog images, category tiles, and the launcher icon without editing hundreds of bitmaps by hand. Optional Gradle wrapper: `./gradlew unifySignArt` (venv + Pillow/NumPy; does not run on every build). Cache and `.venv` are gitignored (`tools/sign-art/cache/`, `tools/sign-art/.venv/`).
 
@@ -55,7 +55,7 @@ These scripts are a **developer-only** artwork pipeline. They are not compiled i
 | `fetch_wikimedia.py` | Download `Hungary road sign {code}.svg` from Wikimedia Commons into the local cache. |
 | `palette.py` | Shared SignBlue / SignRed / SignYellow, SVG hex snap, 1024px rasterize, write PNG into `drawable-xxhdpi`. |
 | `unify_palette.py` | Snap cached SVGs and remaining photos onto the palette; strip watermarks on photo originals. |
-| `remove_watermark.py` | Fill the top-left `(c) LK` band on blue (and similar) photo rasters. Used by unify. |
+| `remove_watermark.py` | Fill the top-left `(c) KL ☺` band on blue (and similar) photo rasters. Used by unify. |
 | `redraw_originals.py` | Replace signs that have no usable photo: Wikimedia SVG (e.g. E-005) or drawn composites (plates, P+R, bus-and-cycle lane, …). |
 | `render_category_icons.py` | The nine home-grid tiles in `res/drawable/` (seven vectors, two PNG composites). |
 | `render_launcher.py` | Launcher foreground / mipmaps and `docs/icon.png` from `launcher.svg`. |

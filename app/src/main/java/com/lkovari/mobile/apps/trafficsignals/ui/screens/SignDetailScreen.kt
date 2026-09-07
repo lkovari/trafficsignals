@@ -87,7 +87,8 @@ fun SignDetailScreen(
                 Spacer(modifier = Modifier.height(8.dp))
             }
             Text(
-                text = stringResource(sign.titleRes),
+                text = stringResource(sign.titleRes) + "\n\n" +
+                    stringResource(R.string.kresz_paragraph, sign.kreszParagraph),
                 style = MaterialTheme.typography.bodyLarge,
                 modifier = Modifier.fillMaxWidth()
             )

@@ -14,6 +14,7 @@ Versioning matches `versionName` **2.0.0** / `versionCode` **2** (minSdk 24, tar
 
 ### Added
 
+- Hungarian and GB flag buttons on the home and About top bars switch language immediately; until then Hungarian is used only for a Hungarian device locale.
 - Police signals category (KRESZ 6–7. §): arm signals, stop disc, stop from a moving police vehicle, and flagman.
 - Everyday/exam signs A-026, C-006, C-024, C-041, D-005, D-006, D-007, D-011, D-012, E-028, E-029, G-401.
 - Remaining unique KRESZ meanings: E-030/E-031, C-011, C-040, C-049, D-031/D-032, H-002–H-010, H-115, lane-use lights, cycle signal, yellow edge lines, BUS wordmark; E-007/H-104/E-003/E-014 bound to existing entries.
@@ -22,7 +23,12 @@ Versioning matches `versionName` **2.0.0** / `versionCode` **2** (minSdk 24, tar
 
 ### Changed
 
+- About logo is larger so the app icon is easier to see.
 - Police-signal drawings show cars, stop marks and turn paths; grid tiles use short names and the detail screen leads with the name then the rule.
+- Every sign and signal description cites the matching KRESZ paragraph of 1/1975. (II. 5.) KPM–BM.
+- About links the official KRESZ text (net.jogtar.hu) above Original source.
+- About explains the occasional former `(c) KL ☺` watermark on leftover raster images.
+- About artwork line: all images and illustrations, signs and diagrams are based on KRESZ tables and Wikimedia Commons.
 
 ## [2.0.0] — 2026-09-06
 
@@ -54,4 +60,4 @@ Kotlin + Jetpack Compose rewrite of the 2011 Eclipse app (`trafficsignals-e`). P
 - Missing titles that used to show `-` now have EN/HU strings.
 - Wrong string bindings from the old `ImagesView` map (sign id now matches the string resource name).
 - Category key typo `kategoria_utvonatlipus` corrected to `kategoria_utvonaltipus`.
-- Removed `(c) LK` watermarks from catalog diagrams; low-resolution JPEGs replaced with PNG or redrawn KRESZ SVGs.
+- Removed `(c) KL ☺` watermarks from catalog diagrams; low-resolution JPEGs replaced with PNG or redrawn KRESZ SVGs.

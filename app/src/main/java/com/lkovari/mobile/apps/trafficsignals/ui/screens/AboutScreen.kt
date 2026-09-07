@@ -6,11 +6,15 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.outlined.Copyright
@@ -24,6 +28,8 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clipToBounds
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -32,10 +38,16 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.lkovari.mobile.apps.trafficsignals.R
+import com.lkovari.mobile.apps.trafficsignals.data.AppLanguage
+import com.lkovari.mobile.apps.trafficsignals.ui.LanguageSwitcher
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AboutScreen(onBack: () -> Unit) {
+fun AboutScreen(
+    language: AppLanguage,
+    onLanguage: (AppLanguage) -> Unit,
+    onBack: () -> Unit
+) {
     val uriHandler = LocalUriHandler.current
     val sourceUrl = stringResource(R.string.about_source_url)
     val privacyUrl = stringResource(R.string.about_privacy_url)
@@ -51,6 +63,9 @@ fun AboutScreen(onBack: () -> Unit) {
                             contentDescription = null
                         )
                     }
+                },
+                actions = {
+                    LanguageSwitcher(selected = language, onSelect = onLanguage)
                 }
             )
         }
@@ -59,6 +74,7 @@ fun AboutScreen(onBack: () -> Unit) {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(inner)
+                .verticalScroll(rememberScrollState())
                 .padding(horizontal = 16.dp, vertical = 8.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(6.dp)
@@ -66,7 +82,10 @@ fun AboutScreen(onBack: () -> Unit) {
             Image(
                 painter = painterResource(R.drawable.ic_launcher_foreground),
                 contentDescription = null,
-                modifier = Modifier.size(72.dp)
+                modifier = Modifier
+                    .size(192.dp)
+                    .clipToBounds()
+                    .scale(1.9f)
             )
             Text(
                 text = stringResource(R.string.about_appname),
@@ -88,6 +107,30 @@ fun AboutScreen(onBack: () -> Unit) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center
             )
+            Spacer(modifier = Modifier.height(8.dp))
+            val kreszUrl = stringResource(R.string.about_kresz_url)
+            Text(
+                text = stringResource(R.string.about_kresz_label),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.clickable { uriHandler.openUri(kreszUrl) }
+            )
+            Text(
+                text = kreszUrl,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.primary,
+                textDecoration = TextDecoration.Underline,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.clickable { uriHandler.openUri(kreszUrl) }
+            )
+            Text(
+                text = stringResource(R.string.about_watermark),
+                style = MaterialTheme.typography.bodySmall.copy(lineHeight = 16.sp),
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = TextAlign.Center
+            )
+            Spacer(modifier = Modifier.height(8.dp))
             Text(
                 text = stringResource(R.string.about_source_label),
                 style = MaterialTheme.typography.labelLarge,

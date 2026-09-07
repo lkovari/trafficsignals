@@ -33,14 +33,18 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.lkovari.mobile.apps.trafficsignals.R
+import com.lkovari.mobile.apps.trafficsignals.data.AppLanguage
 import com.lkovari.mobile.apps.trafficsignals.data.SignCatalog
 import com.lkovari.mobile.apps.trafficsignals.data.SignCategory
+import com.lkovari.mobile.apps.trafficsignals.ui.LanguageSwitcher
 
 private const val CategoryColumns = 3
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CategoryListScreen(
+    language: AppLanguage,
+    onLanguage: (AppLanguage) -> Unit,
     onCategory: (SignCategory) -> Unit,
     onAbout: () -> Unit
 ) {
@@ -50,6 +54,7 @@ fun CategoryListScreen(
             TopAppBar(
                 title = { Text(stringResource(R.string.menuTitle)) },
                 actions = {
+                    LanguageSwitcher(selected = language, onSelect = onLanguage)
                     IconButton(onClick = onAbout) {
                         Icon(
                             imageVector = Icons.Outlined.Info,
